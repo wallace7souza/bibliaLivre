@@ -1,0 +1,895 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Biblia LIVRE</title>
+
+
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.0-biblia-livre.css" />
+<link rel="stylesheet" href="./css/app.css" />
+
+<script src="./js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="./js/jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
+<script src="./js/bible-util.js" type="text/javascript"></script>
+<script src="./js/index.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+	<div data-role="page" id="Inicio">
+		<div data-role="header">
+			<h1>Bíblia Livre</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="#TestamentoPage" data-transition="slide">
+						<h3>Bíblia</h3>
+						<p>
+							<em>Tradução por João Ferreira de Almeida</em>
+						</p>
+				</a></li>
+
+			</ul>
+
+		</div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="TestamentoPage">
+		<div data-role="header">
+			<h1>Testamentos</h1>
+			<a href="#Inicio" data-prefetch="true" data-role="button"
+				data-icon="back" data-iconpos="left" data-rel="back">Voltar</a>
+
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="#AntigoTestamentoPage" data-transition="slide" onclick="testamento='AT'">
+						<h3>Antigo Testamento</h3>
+						<p>
+							<em>39 Livros</em>
+						</p>
+				</a></li>
+				<li><a href="#NovoTestamentoPage" data-transition="slide" onclick="testamento='NT'">
+						<h3>Novo Testamento</h3>
+						<p>
+							<em>27 Livros</em>
+						</p>
+				</a></li>
+			</ul>
+
+		</div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="AntigoTestamentoPage" data-dom-cache="true">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<h1>Antigo Testamento</h1>
+			<a href="#TestamentoPage" data-role="button" data-icon="back"
+				data-iconpos="left" data-rel="back">Voltar</a>
+		</div>
+		<div data-role="content">
+
+				<div data-role="popup" id="popupCapVerAt" data-theme="a" data-overlay-theme="a" class="ui-corner-all popup-cap-ver">
+				         
+					<div style="padding:10px 20px;">
+						 <div data-role="header" data-theme="a" class="ui-corner-top">
+						<h1>Livro</h1>
+						</div>
+
+						<fieldset data-role="controlgroup" id="controlgroup-cap-ver-at">
+					    
+					        <label for="select-choice-month">Cap: 1</label>
+					        <select name="select-cap-at" id="select-cap-at" onChange="capitulo=this.value;loadVersiculos('#select-ver-at',this.value);">
+					            <!-- <option value="1">Cap 1</option>
+					            <option value="2">Cap 2</option> -->
+					        </select>
+					    
+					        <label for="select-choice-day">Versículo</label>
+					        <select name="select-ver-day" id="select-ver-at" onChange="versiculo=this.value;"> 
+					            <!-- <option value="1">Ver 1</option> -->
+					        </select>
+					    
+					        
+					    </fieldset>
+					
+			
+						<a href="javascript:void()" onclick="$( '#popupCapVerAt').popup( 'close' )" data-role="button" data-inline="true" data-rel="back" data-theme="c">Voltar</a>    
+						<a id="ATgoToBook" href="javascript:void(0)" data-role="button" data-inline="true" data-theme="b" onclick="loadBook(true)">Ir</a>  
+					</div>
+				</div>
+		
+		
+			<ul data-role="listview" width="100%">
+				<!-- 				<li data-role="list-divider">Friday, October 8, 2010 <span -->
+				<!-- 					class="ui-li-count">2</span></li> -->
+				<li><a href="#popupCapVerAt" onclick="bookClicked='Gn'" data-rel="popup">
+						<h2>Gênesis - Gn</h2> <!-- 						<p> --> <!-- 							<strong>You've been invited to a meeting at Filament -->
+						<!-- 								Group in Boston, MA</strong> --> <!-- 						</p> -->
+						<p style="white-space: normal;" >Este livro, que mostra como era "no
+							princípio", faz uma narrativa da criação, do relacionamento de
+							Deus com o homem e da promessa de Deus a Abraão e seus
+							descendentes.</p>
+						<p class="ui-li-aside">
+							<strong>50 Caps.</strong>
+						</p>
+				</a></li>
+				<li><a href="index.html">
+						<h2>Êxodo - Êx</h2> <!-- 						<p> --> <!-- 							<strong>Boston Conference Planning</strong> -->
+						<!-- 						</p> -->
+						<p style="white-space: normal;">O nome Êxodo significa "saída". Este
+							livro conta como Deus livrou os israelitas de uma vida de penúria
+							e escravidão no Egito. Deus fez uma aliança com eles e lhes deu
+							leis para ordenarem e governarem sua vida.</p>
+
+						<p class="ui-li-aside">
+							<strong>40 Caps</strong>
+						</p>
+				</a></li>
+				<!-- 				<li data-role="list-divider">Thursday, October 7, 2010 <span -->
+				<!-- 					class="ui-li-count">1</span></li> -->
+				<li><a href="index.html">
+						<h2>Levítico - Lv</h2> <!-- 						<p> --> <!-- 							<strong>Re: Dinner Tonight</strong> -->
+						<!-- 						</p> -->
+						<p style="white-space: normal;">O nome do livro se deriva do nome de uma
+							das doze tribos de Israel. O livro registra todas as leis e
+							regulamentos a respeito de rituais e cerimônias.</p>
+						<p class="ui-li-aside">
+							<strong>27 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Números - Nm</h2>
+						<p style="white-space: normal;">Os israelitas vagaram pelo deserto
+							durante quarenta anos, antes de entrar em Canaã, "a Terra
+							Prometida". O nome do livro deriva dos censos promovidos durante
+							esse tempo no deserto.</p>
+						<p class="ui-li-aside">
+							<strong>36 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Deuteronômio - Dt</h2>
+						<p style="white-space: normal;">Moisés pronunciou três discursos de
+							despedida pouco antes de morrer. Neles, recapitulou, com o povo,
+							todas as leis de Deus para os israelitas. O nome do livro
+							expressa essa "recapitulação" ou "segunda lei".</p>
+						<p class="ui-li-aside">
+							<strong>34 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Josué - Js</h2>
+						<p style="white-space: normal;">Josué foi o líder dos exércitos
+							israelitas em suas vitórias sobre seus inimigos, os cananeus. O
+							livro termina descrevendo a divisão da terra entre as doze tribos
+							de Israel.</p>
+						<p class="ui-li-aside">
+							<strong>24 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Juízes - Jz</h2>
+						<p style="white-space: normal;">Os israelitas, constantemente,
+							desobedeciam a Deus e caíam nas mãos de países opressores. Deus
+							constituiu juízes para livrá-los da opressão.</p>
+						<p class="ui-li-aside">
+							<strong>21 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Rute - Rt</h2>
+						<p style="white-space: normal;">O amor e a dedicação de Rute à sua sogra,
+							Noemi, são o tema deste livro.</p>
+						<p class="ui-li-aside">
+							<strong>4 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>1 Samuel - 1Sm</h2>
+						<p style="white-space: normal;">Samuel foi o líder de Israel no período
+							compreendido entre os juízes e Saul, o primeiro rei. Quando a
+							liderança de Saul falhou, Samuel ungiu a Davi como rei.</p>
+						<p class="ui-li-aside">
+							<strong>31 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>2 Samuel - 2Sm</h2>
+						<p style="white-space: normal;">Sobe o reinado de Davi, a nação se unificou
+							e se fortaleceu. No entanto, depois dos pecados de Davi,
+							adultério e assassinato, tanto a nação como a família do rei
+							sofreram muito.</p>
+						<p class="ui-li-aside">
+							<strong>24 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>1 Reis - 1Rs</h2>
+						<p style="white-space: normal;">Este livro inicia com o reinado de
+							Salomão em Israel. Depois de sua morte, o reino se dividiu em
+							consequência da guerra civil entre o Norte e o Sul, resultando no
+							surgimento de duas nações: Israel no Norte e Judá no Sul.</p>
+						<p class="ui-li-aside">
+							<strong>22 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>2 Reis - 2Rs</h2>
+						<p style="white-space: normal;">Israel foi conquistada pela Assíria em
+							721 a.C., e Judá, pela Babilônia, em 586 a.C. Estes
+							acontecimentos foram considerados como um castigo ao povo pela
+							desobediência às leis de Deus.</p>
+						<p class="ui-li-aside">
+							<strong>25 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>1 Crônicas - 1Cr</h2>
+						<p style="white-space: normal;">Este livro inicia com as genealogias de
+							Adão até Davi e, em seguida, conta os acontecimentos do reinado
+							de Davi.</p>
+						<p class="ui-li-aside">
+							<strong>29 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>2 Crônicas - 2Cr</h2>
+						<p style="white-space: normal;">Este livro abrange o mesmo período que
+							2Reis, mas com ênfase em Judá, o Reino do Sul, e seus
+							governantes.</p>
+						<p class="ui-li-aside">
+							<strong>36 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Esdras - Ed</h2>
+						<p style="white-space: normal;">Depois de estar cativo na Babilônia por
+							algumas décadas, o povo de Deus retornou a Jerusalém. Um de seus
+							líderes era Esdras. Este livro contém a admoestação que Esdras
+							fez ao povo para que este seguisse e honrasse a lei de Deus.</p>
+						<p class="ui-li-aside">
+							<strong>10 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Neemias - Ne</h2>
+						<p style="white-space: normal;">Depois do templo, também foi reconstruída
+							a muralha de Jerusalém. Neemias foi quem dirigiu esse
+							empreendimento. Ele também colaborou com Esdras para restaurar o
+							fervor religioso do povo.</p>
+						<p class="ui-li-aside">
+							<strong>13 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Neemias - Ne</h2>
+						<p style="white-space: normal;">Depois do templo, também foi reconstruída
+							a muralha de Jerusalém. Neemias foi quem dirigiu esse
+							empreendimento. Ele também colaborou com Esdras para restaurar o
+							fervor religioso do povo.</p>
+						<p class="ui-li-aside">
+							<strong>13 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Ester - Et</h2>
+						<p style="white-space: normal;">Este livro relata a história de uma
+							rainha judia da Pérsia, que denunciou um complô que visava
+							destruir seus compatriotas. Com isso ela evitou que todos fossem
+							aniquilados.</p>
+						<p class="ui-li-aside">
+							<strong>10 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Jó - Jó</h2>
+						<p style="white-space: normal;">A pergunta "Por que sofrem os inocentes?"
+							é tratada nesta história bíblica.</p>
+						<p class="ui-li-aside">
+							<strong>42 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Salmos - Sl</h2>
+						<p style="white-space: normal;">Estas 150 orações foram usadas pelos
+							hebreus para expressar seu relacionamento com Deus. Abrangem todo
+							o campo das emoçoes humanas, desde a alegria até o ódio, da
+							esperança ao desepero.</p>
+						<p class="ui-li-aside">
+							<strong>150 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Provérbios - Pv</h2>
+						<p style="white-space: normal;">Este é o livro de máximas de sabedoria,
+							de ensinamentos éticos e de senso comum acerca de como viver uma
+							vida reta.</p>
+						<p class="ui-li-aside">
+							<strong>31 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Eclesiastes - Ec</h2>
+						<p style="white-space: normal;">Na sua busca por felicidade e pelo
+							sentido da vida, este escritor, conhecido como "filósofo" ou
+							"pregador", faz perguntas que contiuam presentes na sociedade
+							contemporânea.</p>
+						<p class="ui-li-aside">
+							<strong>12 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Cântico dos Cânticos - Ct</h2>
+						<p style="white-space: normal;">Este poema descreve o gozo e êxtase do
+							amor. Simbolicamente, tem sido aplicado ao amor de Deus por
+							Israel e ao amor de Cristo pela Igreja.</p>
+						<p class="ui-li-aside">
+							<strong>8 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Isaías - Is</h2>
+						<p style="white-space: normal;">O profeta Isaías levou a mensagem do
+							juízo de Deus às nações, anunciou um rei futuro, à semelhança de
+							Davi, e prometeu uma era de paz e tranquilidade.</p>
+						<p class="ui-li-aside">
+							<strong>66 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Jeremias - Jr</h2>
+						<p style="white-space: normal;">Muito antes da destruição de Judá pela
+							Babilônia Jeremias predisse o justo juízo de Deus. Embora sua
+							mensagem seja majoritariamente de destruição, Jeremias também
+							falou sobre a nova aliança com Deus.</p>
+						<p class="ui-li-aside">
+							<strong>52 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Lamentações de Jeremias - Lm</h2>
+						<p style="white-space: normal;">Tal qual Jeremias havia predito,
+							Jerusalém caiu cativa da Babilônia. Este livro registra cinco
+							"lamentos" pela cidade caída.</p>
+						<p class="ui-li-aside">
+							<strong>5 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Ezequiel - Ez</h2>
+						<p style="white-space: normal;">A mensagem de Ezequiel foi dada aos
+							Judeus cativos na Babilônia. Ezequiel usou histórias e parábolas
+							para falar sobre o juízo, sobre a esperança e sobre a restauração
+							de Israel.</p>
+						<p class="ui-li-aside">
+							<strong>48 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Daniel - Dn</h2>
+						<p style="white-space: normal;">Daniel se manteve fiel a Deus, mesmo
+							enfrentando muitas pressões quando esteve cativo na Babilônia.
+							Este livro inclui as visões proféticas de Daniel.</p>
+						<p class="ui-li-aside">
+							<strong>12 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Oseias - Os</h2>
+						<p style="white-space: normal;">Oseias se vale de sua experiência
+							conjugal, em que ele era dedicado à sua esposa, mesmo sabendo que
+							ela lhe era infiel, para ilustrar o adultério que Israel tinha
+							cometido contra Deus e para mostrar como o fiel amor de Deus pelo
+							seu povo nucna muda.</p>
+						<p class="ui-li-aside">
+							<strong>14 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Joel - Jl</h2>
+						<p style="white-space: normal;">Depois de uma praga de gafanhotos, Joel
+							admoesta o povo para que se arrependa.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Amós - Am</h2>
+						<p style="white-space: normal;">Durante um tempo de prosperidade, este
+							profeta deJudá pregou aos ricos líderes de Israel sobre o juízo
+							de Deus; insistia em que pensassem nos pobres e oprimidos, antes
+							de pensarem em sua própria satisfação.</p>
+						<p class="ui-li-aside">
+							<strong>9 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Jonas - Jn</h2>
+						<p style="white-space: normal;">Jonas não queria pregar para a gente de
+							Nínive, que era inimiga do país do profeta. Quando, finalmente,
+							levou a mensagem enviada por Deus, seus habitantes se
+							arrependeram.</p>
+						<p class="ui-li-aside">
+							<strong>4 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Miqueias - Mq</h2>
+						<p style="white-space: normal;">A mensagem de Miqueias para Judá era de
+							juízo, em vez de perdão, esperança e restauração. Especialmente
+							notável é um versículo em que resume o que Deus requer de nós
+							(6.8)</p>
+						<p class="ui-li-aside">
+							<strong>7 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Naum - Na</h2>
+						<p style="white-space: normal;">Naum anunciou que Deus destruiria o povo
+							de Nínive por sua crueldade na guerra.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Habacuque - Hc</h2>
+						<p style="white-space: normal;">Este livro apresenta um diálogo entre
+							Deus e Habacuque sobre a justiça e o sofrimento.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Sofonias - Sf</h2>
+						<p style="white-space: normal;">Este profeta anunciou o Dia do Senhor,
+							que levaria juizo a Judá e às nações vizinhas. Esse Dia, que
+							haveria de vir, seria de destruição pra muitos, mas um pequeno
+							remanescente, sempre fiel a Deus, sobreviveria para abençoar o
+							mundo inteiro.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Ageu - Ag</h2>
+						<p style="white-space: normal;">Depois que o povo voltou do exílio, Ageu,
+							admoestou as pessoas para que dessem prioridade a Deus e
+							reconstruísem em primeiro lugar o templo, mesmo antes de
+							resconstruírem suas casas.</p>
+						<p class="ui-li-aside">
+							<strong>2 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Zacarias - Zc</h2>
+						<p style="white-space: normal;">Como Ageu, Zacarias instou o povo a
+							reconstuir o templo, assegurando-lhes a ajuda e bênçãos de Deus.
+							Suas visões apontavam para um futuro brilhante.</p>
+						<p class="ui-li-aside">
+							<strong>14 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>Malaquias - Ml</h2>
+						<p style="white-space: normal;">Após o retorno do exílio, o povo voltou a
+							descuidar de sua vida religiosa. Malaquias passou a inspirá-los
+							novamente, falando-lhes sobre o "Dia do Senhor."</p>
+						<p class="ui-li-aside">
+							<strong>4 Caps.</strong>
+						</p>
+				</a></li>
+
+			</ul>
+
+		</div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="NovoTestamentoPage" data-dom-cache="true">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<h1>Novo Testamento</h1>
+			<a href="#TestamentoPage" data-role="button" data-icon="back"
+				data-iconpos="left" data-rel="back">Voltar</a>
+		</div>
+		<div data-role="content">
+
+			<ul data-role="listview" >
+
+				<li><a href="index.html">
+						<h2>Mateus - Mt</h2>
+						<p style="white-space: normal;">Este Evangelho cita muitos textos do
+							Antigo Testamento. Ele se destinava, primordialmente, ao público
+							judeu, para o qual apresentava Jesus como o Messias prometido nas
+							Escrituras do Antigo Testamento. Mateus narra a história de Jesus
+							desde o seu nascimento até sua ressurreição e põe ênfase especial
+							nos ensinamentos do Mestre.</p>
+						<p class="ui-li-aside">
+							<strong>28 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Marcos - Mc</h2>
+						<p style="white-space: normal;">Marcos escreveu um Evangelho curto,
+							conciso e cheio de ação. Seu objetivo era aprofundar a fé e a
+							dedicação da comunidade para a qual ele escrevia.</p>
+						<p class="ui-li-aside">
+							<strong>16 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Lucas - Lc</h2>
+						<p style="white-space: normal;">Neste Evangelho é enfatizado como a
+							salvação em Jesus está ao alcance de todos. O evangelista mostra
+							como Jesus estava em contato com as pessoas pobres, com os
+							necessitados e com os que são desprezados pela sociedade.</p>
+						<p class="ui-li-aside">
+							<strong>24 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>João - Jo</h2>
+						<p style="white-space: normal;">O Evangelho de João, pela sua forma, se
+							coloca à parte dos outros três, João organiza sua mensagem
+							enfocando sete sinais que apontam para Jesus como Filho de Deus.
+							Seu estilo literário é reflexivo e cheio de imagens e figuras de
+							linguagem.</p>
+						<p class="ui-li-aside">
+							<strong>21 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Atos dos Apóstolos - At</h2>
+						<p style="white-space: normal;">Quando Jesus deixou os seus discípulos, o
+							Espírito Santo foi habitar com eles. Este livro foi escrito por
+							Lucas para ser um complemento ao seu Evangelho. Ele relata
+							acontecimentos da história e da ação da Igreja cristã primitiva,
+							mostrando como a fé se propagou no mundo mediterrâneo de então.</p>
+						<p class="ui-li-aside">
+							<strong>28 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Romanos</h2>
+						<p style="white-space: normal;">Nesta importante Epístola, Paulo escreve
+							aos romanos sobre a vida no Espírito, que é dada pela fé aos que
+							creem em Cristo. O apóstolo reafirma a grande bondade de Deus e
+							declara que, através de Jesus Cristo, Deus nos aceita e nos
+							liberta de nossos pecados.</p>
+						<p class="ui-li-aside">
+							<strong>16 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>1 Coríntios - 1Co</h2>
+						<p style="white-space: normal;">Esta Epístola trata especialmente dos
+							problemas que a igreja de Corinto estava enfrentado: dissensão,
+							imoralidade, problemas quanto à forma da adoração pública e
+							confusão sobre os dons do Espírito.</p>
+						<p class="ui-li-aside">
+							<strong>16 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>2 Coríntios - 2Co</h2>
+						<p style="white-space: normal;">Nesta Epístola, o apóstolo Paulo escreve
+							sobre seu relacionamento com a igreja de Corinto e as
+							dificuldades que alguns falsos profetas haviam levado ao seu
+							ministério.</p>
+						<p class="ui-li-aside">
+							<strong>13 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Gálatas - Gl</h2>
+						<p style="white-space: normal;">Esta Epístola expõe a liberdade da pessoa
+							que crê em Cristo com respeito à lei. Paulo declara que é somente
+							pela fé que as pessoas são reconciliadas com Deus.</p>
+						<p class="ui-li-aside">
+							<strong>6 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Efésios - Ef</h2>
+						<p style="white-space: normal;">O tema central desta Epístola é o
+							propósito eterno de Deus: Jesus Cristo é a cabeça da Igreja, que
+							é formada a partir de muitas nações e raças.</p>
+						<p class="ui-li-aside">
+							<strong>6 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Filipenses - Fp</h2>
+						<p style="white-space: normal;">A ênfase desta Epístola está no gozo que
+							o crente em Cristo encontra em todas as circunstâncias da vida. O
+							apóstolo Paulo a escreveu quando estava encarcerado.</p>
+						<p class="ui-li-aside">
+							<strong>4 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Colossenses - Cl</h2>
+						<p style="white-space: normal;">Nesta Epístola, o apóstolo Paulo exorta
+							os cristãos de Colossos para que abandonem suas superstições e
+							que Cristo seja o centro de sua vida.</p>
+						<p class="ui-li-aside">
+							<strong>4 Caps.</strong>
+						</p>
+				</a></li>
+
+				<li><a href="index.html">
+						<h2>1 Tessalonicenses - 1Ts</h2>
+						<p style="white-space: normal;">O apóstolo Paulo dá orientações aos
+							cristãos de Tessalônica a respeito da votla de Jesus ao mundo.</p>
+						<p class="ui-li-aside">
+							<strong>5 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>2 Tessalonicenses - 2Ts</h2>
+						<p style="white-space: normal;">Como em sua primeira Epístola, o apóstolo
+							Paulo fala sobre o retorno de Jesus ao mundo. Também trata de
+							preparar os cristãos para a vinda do Senhor.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>1 Timóteo - 1Tm</h2>
+						<p style="white-space: normal;">Esta Epístola serve de orientação a
+							Timóteo, um jovem líder da Igreja primitiva. O apóstolo Paulo lhe
+							dá conselhos sobre a adoração, o ministério e os reclacionamentos
+							dentro da Igreja.</p>
+						<p class="ui-li-aside">
+							<strong>6 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>2 Timóteo - 2Tm</h2>
+						<p style="white-space: normal;">Esta é a última Epístola escrita pelo
+							apóstolo Paulo. Nela lança um último desafio a seus companheiros
+							de trabalho.</p>
+						<p class="ui-li-aside">
+							<strong>4 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Tito - Tt</h2>
+						<p style="white-space: normal;">Tito era ministro em Creta. Nesta
+							Epístola, o apóstolo Paulo o orienta sobre como ajudar os novos
+							cristãos.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Filemon - Fm</h2>
+						<p style="white-space: normal;">Filemon é instado a perdoar seu escravo,
+							Onésimo, que havia fugido. Filemon deveria aceitá-lo de volta
+							como um irmão em Cristo.</p>
+						<p class="ui-li-aside">
+							<strong>1 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Hebreus - Hb</h2>
+						<p style="white-space: normal;">Esta Epístola exorta os novos cristãos a
+							não observarem mais rituais e cerimônias tradicionais, pois, em
+							Cristo, eles ja foram cumpridos.</p>
+						<p class="ui-li-aside">
+							<strong>13 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Tiago - Tg</h2>
+						<p style="white-space: normal;">Tiago aconselha os cristãos a viverem na
+							prática da fé e, além disso, oferece ideias sobre como isso pode
+							ser feito.</p>
+						<p class="ui-li-aside">
+							<strong>5 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>1 Pedro - 1Pe</h2>
+						<p style="white-space: normal;">Esta Epístola foi escrita para confortar
+							os cristãos da Igreja primitiva que estavam sendo perseguidos por
+							causa da sua fé.</p>
+						<p class="ui-li-aside">
+							<strong>5 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>2 Pedro - 2Pe</h2>
+						<p style="white-space: normal;">Nesta Epístola o apóstolo Pedro adverte
+							os cristãos sobre os falsos mestres e os estimula a continuarem
+							leais a Deus.</p>
+						<p class="ui-li-aside">
+							<strong>3 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>1 João - 1Jo</h2>
+						<p style="white-space: normal;">Esta Espítola explica verdades básicas
+							sobre a vida cristã com ênfase no mandamento de amarem uns aos
+							outros.</p>
+						<p class="ui-li-aside">
+							<strong>5 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>2 João - 2Jo</h2>
+						<p style="white-space: normal;">Nesta Espítola, dirigida à "senhora
+							eleita e aos seus filhos", adverte os cristãos quanto aos falsos
+							profetas.</p>
+						<p class="ui-li-aside">
+							<strong>1 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>3 João - 3Jo</h2>
+						<p style="white-space: normal;">Em contraste com sua Segunda Epístola,
+							esta fala sobre a necessidade de receber os que pregam a Cristo.
+
+						</p>
+						<p class="ui-li-aside">
+							<strong>1 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Judas - Jd</h2>
+						<p style="white-space: normal;">Judas adverte seus leitores sobre a má
+							influência de pessoas alheias à irmandade do santos.</p>
+						<p class="ui-li-aside">
+							<strong>1 Caps.</strong>
+						</p>
+				</a></li>
+
+
+				<li><a href="index.html">
+						<h2>Apocalipse - Ap</h2>
+						<p style="white-space: normal;">Este livro foi escrito para encorajar os
+							cristãos que estavam sendo perseguidos e para firmá-los na
+							confiança de que Deus cuidará deles. Usando símbolos e visões, o
+							escritor ilustra o triunfo do bem sobre o mal e a criação de uma
+							nova Terra e um novo Céu.</p>
+						<p class="ui-li-aside">
+							<strong>22 Caps.</strong>
+						</p>
+				</a></li>
+
+
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="LivroPage" data-dom-cache="true">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+
+		<div class="ui-bar">
+			<a href="#" data-role="button" data-icon="back"	data-iconpos="left" data-transition="flow" data-rel="back">Voltar</a>
+			<h1 id="headText">
+
+
+			</h1>
+        <label for="select-choice-1" class="ui-hidden-accessible ui-btn-right"></label>
+        <select name="select-livro" id="select-livro" data-mini="true" data-inline="true" onChange="capitulo=this.value;versiculo=1;loadBook(false);">
+            
+        </select>
+    </div>
+		</div>
+		<div data-role="content" id="livro-content">
+		<h4>
+          <p class="bookHeader" id="bookHeader"><strong></strong></p>
+          <p class="bookName" id="bookName"><strong></strong></p>
+        </h4>
+        <div id="contentBook">
+
+        </div>
+
+        </div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+	</div>
+
+</body>
+</html>
