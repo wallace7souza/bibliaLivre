@@ -1,0 +1,186 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 44",
+  "bookContent": [
+    {
+      "id": 0,
+      "tipo": "calling",
+      "texto": "Estratagema de José para deter seus irmãos"
+    },
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Deu José esta ordem ao mordomo de sua casa: Enche de mantimento os sacos que estes homens trouxeram, quanto puderem levar, e põe o dinheiro de cada um na boca do saco de mantimento."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "O meu copo de prata pô-lo-ás na boca do saco de mantimento do mais novo, com o dinheiro do seu cereal. E assim se fez segundo José dissera."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "De manhã, quando já claro, despediram-se estes homens, eles com os seus jumentos."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Tendo saído eles da cidade, não se havendo ainda distanciado, disse José ao mordomo de sua casa: Levanta-te e segue após esses homens; e, alcançando-os, lhes dirás: Por que pagastes mal por bem?"
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Não é este o copo em que bebe meu senhor? E por meio do qual faz as suas adivinhações? Procedestes mal no que fizestes."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "E alcançou-os e lhes falou essas palavras."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Então, lhe responderam: Por que diz meu senhor tais palavras? Longe estejam teus servos de praticar semelhante coisa."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "O dinheiro que achamos na boca dos sacos de mantimento, tornamos a trazer-te desde a terra de Canaã; como, pois, furtaríamos da casa do teu senhor prata ou ouro?"
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Aquele dos teus servos, com quem for achado, morra; e nós ainda seremos escravos do meu senhor."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Então, lhes respondeu: Seja conforme as vossas palavras; aquele com quem se achar será meu escravo, porém vós sereis inculpados."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "E se apressaram, e, tendo cada um posto o saco de mantimento em terra, o abriu."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "O mordomo os examinou, começando do mais velho e acabando no mais novo; e achou-se o copo no saco de mantimento de Benjamim."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Então, rasgaram as suas vestes e, carregados de novo os jumentos, tornaram à cidade."
+    },
+    {
+      "id": 13,
+      "tipo": "calling",
+      "texto": "A defesa de Judá"
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "E chegou Judá com seus irmãos à casa de José; este ainda estava ali; e prostraram-se em terra diante dele."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Disse-lhes José: Que é isso que fizestes? Não sabíeis vós que tal homem como eu é capaz de adivinhar?"
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "Então, disse Judá: Que responderemos a meu senhor? Que falaremos? E como nos justificaremos? Achou Deus a iniqüidade de teus servos; eis que somos escravos de meu senhor, tanto nós como aquele em cuja mão se achou o copo."
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "Mas ele disse: Longe de mim que eu tal faça; o homem em cuja mão foi achado o copo, esse será meu servo; vós, no entanto, subi em paz para vosso pai."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "Então, Judá se aproximou dele e disse: Ah! Senhor meu, rogo-te, permite que teu servo diga uma palavra aos ouvidos do meu senhor, e não se acenda a tua ira contra o teu servo; porque tu és como o próprio Faraó."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "Meu senhor perguntou a seus servos: Tendes pai ou irmão?"
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "E respondemos a meu senhor: Temos pai já velho e um filho da sua velhice, o mais novo, cujo irmão é morto; e só ele ficou de sua mãe, e seu pai o ama."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "Então, disseste a teus servos: Trazei-mo, para que ponha os olhos sobre ele."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Respondemos ao meu senhor: O moço não pode deixar o pai; se deixar o pai, este morrerá."
+    },
+    {
+      "id": 23,
+      "tipo": "versiculo",
+      "texto": "Então, disseste a teus servos: Se vosso irmão mais novo não descer convosco, nunca mais me vereis o rosto."
+    },
+    {
+      "id": 24,
+      "tipo": "versiculo",
+      "texto": "Tendo nós subido a teu servo, meu pai, e a ele repetido as palavras de meu senhor,"
+    },
+    {
+      "id": 25,
+      "tipo": "versiculo",
+      "texto": "disse nosso pai: Voltai, comprai-nos um pouco de mantimento."
+    },
+    {
+      "id": 26,
+      "tipo": "versiculo",
+      "texto": "Nós respondemos: Não podemos descer; mas, se nosso irmão mais moço for conosco, desceremos; pois não podemos ver a face do homem, se este nosso irmão mais moço não estiver conosco."
+    },
+    {
+      "id": 27,
+      "tipo": "versiculo",
+      "texto": "Então, nos disse o teu servo, nosso pai: Sabeis que minha mulher me deu dois filhos;"
+    },
+    {
+      "id": 28,
+      "tipo": "versiculo",
+      "texto": "um se ausentou de mim, e eu disse: Certamente foi despedaçado, e até agora não mais o vi;"
+    },
+    {
+      "id": 29,
+      "tipo": "versiculo",
+      "texto": "se agora também tirardes este da minha presença, e lhe acontecer algum desastre, fareis descer as minhas cãs com pesar à sepultura."
+    },
+    {
+      "id": 30,
+      "tipo": "versiculo",
+      "texto": "Agora, pois, indo eu a teu servo, meu pai, e não indo o moço conosco, visto a sua alma estar ligada com a alma dele,"
+    },
+    {
+      "id": 31,
+      "tipo": "versiculo",
+      "texto": "vendo ele que o moço não está conosco, morrerá; e teus servos farão descer as cãs de teu servo, nosso pai, com tristeza à sepultura."
+    },
+    {
+      "id": 32,
+      "tipo": "versiculo",
+      "texto": "Porque teu servo se deu por fiador por este moço para com o meu pai, dizendo: Se eu o não tornar a trazer-te, serei culpado para com o meu pai todos os dias."
+    },
+    {
+      "id": 33,
+      "tipo": "versiculo",
+      "texto": "Agora, pois, fique teu servo em lugar do moço por servo de meu senhor, e o moço que suba com seus irmãos."
+    },
+    {
+      "id": 34,
+      "tipo": "versiculo",
+      "texto": "Porque como subirei eu a meu pai, se o moço não for comigo? Para que não veja eu o mal que a meu pai sobrevirá."
+    }
+  ]
+}

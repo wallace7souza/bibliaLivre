@@ -204,10 +204,9 @@ console.log(url);
         // $("#headText").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 
         $(book.bookContent).each(function(idx,ver){
-            if(ver.tipo=='calling'){
+            if(ver.tipo=='calling'||ver.tipo=='sub-calling'){
 
-            $("#contentBook")
-            .append("<p class='calling' ><strong >"+ver.texto+"</strong></p>");
+            $("#contentBook").append("<p class='"+ver.tipo+"' ><strong >"+ver.texto+"</strong></p>");
                  
 
             }else if(ver.tipo=='versiculo'){

@@ -1,0 +1,108 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 12",
+  "bookContent": [
+  {"tipo":"calling","texto":"Deus chama Abrão e lhe faz promessas"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Ora, disse o SENHOR a Abrão: Sai da tua terra, da tua parentela e da casa de teu pai e vai para a terra que te mostrarei;"
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "de ti farei uma grande nação, e te abençoarei, e te engrandecerei o nome. Sê tu uma bênção!"
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Abençoarei os que te abençoarem e amaldiçoarei os que te amaldiçoarem; em ti serão benditas todas as famílias da terra."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Partiu, pois, Abrão, como lho ordenara o SENHOR, e Ló foi com ele. Tinha Abrão setenta e cinco anos quando saiu de Harã."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Levou Abrão consigo a Sarai, sua mulher, e a Ló, filho de seu irmão, e todos os bens que haviam adquirido, e as pessoas que lhes acresceram em Harã. Partiram para a terra de Canaã; e lá chegaram."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Atravessou Abrão a terra até Siquém, até ao carvalho de Moré. Nesse tempo os cananeus habitavam essa terra."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Apareceu o SENHOR a Abrão e lhe disse: Darei à tua descendência esta terra. Ali edificou Abrão um altar ao SENHOR, que lhe aparecera."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Passando dali para o monte ao oriente de Betel, armou a sua tenda, ficando Betel ao ocidente e Ai ao oriente; ali edificou um altar ao SENHOR e invocou o nome do SENHOR."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Depois, seguiu Abrão dali, indo sempre para o Neguebe."
+    },
+    {"tipo":"calling","texto":"Abrão no Egito"},
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Havia fome naquela terra; desceu, pois, Abrão ao Egito, para aí ficar, porquanto era grande a fome na terra."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "Quando se aproximava do Egito, quase ao entrar, disse a Sarai, sua mulher: Ora, bem sei que és mulher de formosa aparência;"
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "os egípcios, quando te virem, vão dizer: É a mulher dele e me matarão, deixando-te com vida."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Dize, pois, que és minha irmã, para que me considerem por amor de ti e, por tua causa, me conservem a vida."
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "Tendo Abrão entrado no Egito, viram os egípcios que a mulher era sobremaneira formosa."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Viram-na os príncipes de Faraó e gabaram-na junto dele; e a mulher foi levada para a casa de Faraó."
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "Este, por causa dela, tratou bem a Abrão, o qual veio a ter ovelhas, bois, jumentos, escravos e escravas, jumentas e camelos."
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "Porém o SENHOR puniu Faraó e a sua casa com grandes pragas, por causa de Sarai, mulher de Abrão."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "Chamou, pois, Faraó a Abrão e lhe disse: Que é isso que me fizeste? Por que não me disseste que era ela tua mulher?"
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "E me disseste ser tua irmã? Por isso, a tomei para ser minha mulher. Agora, pois, eis a tua mulher, toma-a e vai-te."
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "E Faraó deu ordens aos seus homens a respeito dele; e acompanharam-no, a ele, a sua mulher e a tudo que possuía."
+    }
+  ]
+}

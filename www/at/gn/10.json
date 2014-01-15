@@ -1,0 +1,167 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 10",
+  "bookContent": [
+  {"tipo":"calling","texto":"Descendentes dos filhos de Noé"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "São estas as gerações dos filhos de Noé, Sem, Cam e Jafé; e nasceram-lhes filhos depois do dilúvio."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "Os filhos de Jafé são: Gomer, Magogue, Madai, Javã, Tubal, Meseque e Tiras."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Os filhos de Gomer são: Asquenaz, Rifate e Togarma."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Os de Javã são: Elisá, Társis, Quitim e Dodanim."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Estes repartiram entre si as ilhas das nações nas suas terras, cada qual segundo a sua língua, segundo as suas famílias, em suas nações."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Os filhos de Cam: Cuxe, Mizraim, Pute e Canaã."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Os filhos de Cuxe: Sebá, Havilá, Sabtá, Raamá e Sabtecá; e os filhos de Raamá: Sabá e Dedã."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Cuxe gerou a Ninrode, o qual começou a ser poderoso na terra."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Foi valente caçador diante do SENHOR; daí dizer-se: Como Ninrode, poderoso caçador diante do SENHOR."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "O princípio do seu reino foi Babel, Ereque, Acade e Calné, na terra de Sinar."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "Daquela terra saiu ele para a Assíria e edificou Nínive, Reobote-Ir e Calá."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "E, entre Nínive e Calá, a grande cidade de Resém."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Mizraim gerou a Ludim, a Anamim, a Leabim, a Naftuim,"
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "a Patrusim, a Casluim (donde saíram os filisteus) e a Caftorim."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Canaã gerou a Sidom, seu primogênito, e a Hete,"
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "e aos jebuseus, aos amorreus, aos girgaseus,"
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "aos heveus, aos arqueus, aos sineus,"
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "aos arvadeus, aos zemareus e aos hamateus; e depois se espalharam as famílias dos cananeus."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "E o limite dos cananeus foi desde Sidom, indo para Gerar, até Gaza, indo para Sodoma, Gomorra, Admá e Zeboim, até Lasa."
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "São estes os filhos de Cam, segundo as suas famílias, segundo as suas línguas, em suas terras, em suas nações."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "A Sem, que foi pai de todos os filhos de Héber e irmão mais velho de Jafé, também lhe nasceram filhos."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Os filhos de Sem são: Elão, Assur, Arfaxade, Lude e Arã."
+    },
+    {
+      "id": 23,
+      "tipo": "versiculo",
+      "texto": "Os filhos de Arã: Uz, Hul, Geter e Más."
+    },
+    {
+      "id": 24,
+      "tipo": "versiculo",
+      "texto": "Arfaxade gerou a Salá; Salá gerou a Héber."
+    },
+    {
+      "id": 25,
+      "tipo": "versiculo",
+      "texto": "A Héber nasceram dois filhos: um teve por nome Pelegue, porquanto em seus dias se repartiu a terra; e o nome de seu irmão foi Joctã."
+    },
+    {
+      "id": 26,
+      "tipo": "versiculo",
+      "texto": "Joctã gerou a Almodá, a Selefe, a Hazar-Mavé, a Jerá,"
+    },
+    {
+      "id": 27,
+      "tipo": "versiculo",
+      "texto": "a Hadorão, a Uzal, a Dicla,"
+    },
+    {
+      "id": 28,
+      "tipo": "versiculo",
+      "texto": "a Obal, a Abimael, a Sabá,"
+    },
+    {
+      "id": 29,
+      "tipo": "versiculo",
+      "texto": "a Ofir, a Havilá e a Jobabe; todos estes foram filhos de Joctã."
+    },
+    {
+      "id": 30,
+      "tipo": "versiculo",
+      "texto": "E habitaram desde Messa, indo para Sefar, montanha do Oriente."
+    },
+    {
+      "id": 31,
+      "tipo": "versiculo",
+      "texto": "São estes os filhos de Sem, segundo as suas famílias, segundo as suas línguas, em suas terras, em suas nações."
+    },
+    {
+      "id": 32,
+      "tipo": "versiculo",
+      "texto": "São estas as famílias dos filhos de Noé, segundo as suas gerações, nas suas nações; e destes foram disseminadas as nações na terra, depois do dilúvio."
+    }
+  ]
+}

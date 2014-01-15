@@ -1,32 +1,127 @@
 {
- "bookHeader":   "",
- "bookName":"GÊNESIS 3",
- "bookContent":[
+  "bookHeader": "",
+  "bookName": "GÊNESIS 3",
+  "bookContent": [
     {"tipo":"calling","texto":"A queda do homem"},
-    {"tipo":"versiculo","id":"1","texto":"Ora, a serpente era o mais astuto de todos os animais do campo, que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim?"},
-    {"tipo":"versiculo","id":"2","texto":"Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer,"},
-    {"tipo":"versiculo","id":"3","texto":"mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais."},
-    {"tipo":"versiculo","id":"4","texto":"Disse a serpente à mulher: Certamente não morrereis."},
-    {"tipo":"versiculo","id":"5","texto":"Porque Deus sabe que no dia em que comerdes desse fruto, vossos olhos se abrirão, e sereis como Deus, conhecendo o bem e o mal."},
-    {"tipo":"versiculo","id":"6","texto":"Então, vendo a mulher que aquela árvore era boa para se comer, e agradável aos olhos, e árvore desejável para dar entendimento, tomou do seu fruto, comeu, e deu a seu marido, e ele também comeu"},
-    {"tipo":"versiculo","id":"7","texto":"Então foram abertos os olhos de ambos, e conheceram que estavam nus; pelo que coseram folhas de figueira, e fizeram para si aventais."},
-    {"tipo":"versiculo","id":"8","texto":"E, ouvindo a voz do Senhor Deus, que passeava no jardim à tardinha, esconderam-se o homem e sua mulher da presença do Senhor Deus, entre as árvores do jardim."},
-    {"tipo":"versiculo","id":"9","texto":"Mas chamou o Senhor Deus ao homem, e perguntou-lhe: Onde estás?"},
-    {"tipo":"versiculo","id":"10","texto":"Respondeu-lhe o homem: Ouvi a tua voz no jardim e tive medo, porque estava nu; e escondi-me."},
-    {"tipo":"versiculo","id":"11","texto":"Deus perguntou-lhe mais: Quem te mostrou que estavas nu? Comeste da árvore de que te ordenei que não comesses?"},
-    {"tipo":"versiculo","id":"12","texto":"Ao que respondeu o homem: A mulher que me deste por companheira deu-me a árvore, e eu comi."},
-    {"tipo":"versiculo","id":"13","texto":"Perguntou o Senhor Deus à mulher: Que é isto que fizeste? Respondeu a mulher: A serpente enganou-me, e eu comi."},
-    {"tipo":"versiculo","id":"14","texto":"Então o Senhor Deus disse à serpente: Porquanto fizeste isso, maldita serás tu dentre todos os animais domésticos, e dentre todos os animais do campo; sobre o teu ventre andarás, e pó comerás todos os dias da tua vida."},
-    {"tipo":"versiculo","id":"15","texto":"Porei inimizade entre ti e a mulher, e entre a tua descendência e a sua descendência; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar."},
-    {"tipo":"versiculo","id":"16","texto":"E à mulher disse: Multiplicarei grandemente a dor da tua conceição; em dor darás à luz filhos; e o teu desejo será para o teu marido, e ele te dominará."},
-    {"tipo":"versiculo","id":"17","texto":"E ao homem disse: Porquanto deste ouvidos à voz de tua mulher, e comeste da árvore de que te ordenei dizendo: Não comerás dela; maldita é a terra por tua causa; em fadiga comerás dela todos os dias da tua vida."},
-    {"tipo":"versiculo","id":"18","texto":"Ela te produzirá espinhos e abrolhos; e comerás das ervas do campo."},
-    {"tipo":"versiculo","id":"19","texto":"Do suor do teu rosto comerás o teu pão, até que tornes à terra, porque dela foste tomado; porquanto és pó, e ao pó tornarás."},
-    {"tipo":"versiculo","id":"20","texto":"Chamou Adão à sua mulher Eva, porque era a mãe de todos os viventes."},
-    {"tipo":"versiculo","id":"21","texto":"E o Senhor Deus fez túnicas de peles para Adão e sua mulher, e os vestiu."},
-    {"tipo":"versiculo","id":"22","texto":"Então disse o Senhor Deus: Eis que o homem se tem tornado como um de nós, conhecendo o bem e o mal. Ora, não suceda que estenda a sua mão, e tome também da árvore da vida, e coma e viva eternamente."},
-    {"tipo":"versiculo","id":"23","texto":"O Senhor Deus, pois, o lançou fora do jardim do Éden para lavrar a terra, de que fora tomado."},
-    {"tipo":"versiculo","id":"24","texto":"E havendo lançado fora o homem, pôs ao oriente do jardim do Éden os querubins, e uma espada flamejante que se volvia por todos os lados, para guardar o caminho da árvore da vida."}
-
- ]
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Mas a serpente, mais sagaz que todos os animais selváticos que o SENHOR Deus tinha feito, disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim?"
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "Respondeu-lhe a mulher: Do fruto das árvores do jardim podemos comer,"
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "mas do fruto da árvore que está no meio do jardim, disse Deus: Dele não comereis, nem tocareis nele, para que não morrais."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Então, a serpente disse à mulher: É certo que não morrereis."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Porque Deus sabe que no dia em que dele comerdes se vos abrirão os olhos e, como Deus, sereis conhecedores do bem e do mal."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Vendo a mulher que a árvore era boa para se comer, agradável aos olhos e árvore desejável para dar entendimento, tomou-lhe do fruto e comeu e deu também ao marido, e ele comeu."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Abriram-se, então, os olhos de ambos; e, percebendo que estavam nus, coseram folhas de figueira e fizeram cintas para si."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Quando ouviram a voz do SENHOR Deus, que andava no jardim pela viração do dia, esconderam-se da presença do SENHOR Deus, o homem e sua mulher, por entre as árvores do jardim."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "E chamou o SENHOR Deus ao homem e lhe perguntou: Onde estás?"
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Ele respondeu: Ouvi a tua voz no jardim, e, porque estava nu, tive medo, e me escondi."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "Perguntou-lhe Deus: Quem te fez saber que estavas nu? Comeste da árvore de que te ordenei que não comesses?"
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "Então, disse o homem: A mulher que me deste por esposa, ela me deu da árvore, e eu comi."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Disse o SENHOR Deus à mulher: Que é isso que fizeste? Respondeu a mulher: A serpente me enganou, e eu comi."
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "Então, o SENHOR Deus disse à serpente: Visto que isso fizeste, maldita és entre todos os animais domésticos e o és entre todos os animais selváticos; rastejarás sobre o teu ventre e comerás pó todos os dias da tua vida."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Porei inimizade entre ti e a mulher, entre a tua descendência e o seu descendente. Este te ferirá a cabeça, e tu lhe ferirás o calcanhar."
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "E à mulher disse: Multiplicarei sobremodo os sofrimentos da tua gravidez; em meio de dores darás à luz filhos; o teu desejo será para o teu marido, e ele te governará."
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "E a Adão disse: Visto que atendeste a voz de tua mulher e comeste da árvore que eu te ordenara não comesses, maldita é a terra por tua causa; em fadigas obterás dela o sustento durante os dias de tua vida."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "Ela produzirá também cardos e abrolhos, e tu comerás a erva do campo."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "No suor do rosto comerás o teu pão, até que tornes à terra, pois dela foste formado; porque tu és pó e ao pó tornarás."
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "E deu o homem o nome de Eva a sua mulher, por ser a mãe de todos os seres humanos."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "Fez o SENHOR Deus vestimenta de peles para Adão e sua mulher e os vestiu."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Então, disse o SENHOR Deus: Eis que o homem se tornou como um de nós, conhecedor do bem e do mal; assim, que não estenda a mão, e tome também da árvore da vida, e coma, e viva eternamente."
+    },
+    {
+      "id": 23,
+      "tipo": "versiculo",
+      "texto": "O SENHOR Deus, por isso, o lançou fora do jardim do Éden, a fim de lavrar a terra de que fora tomado."
+    },
+    {
+      "id": 24,
+      "tipo": "versiculo",
+      "texto": "E, expulso o homem, colocou querubins ao oriente do jardim do Éden e o refulgir de uma espada que se revolvia, para guardar o caminho da árvore da vida."
+    }
+  ]
 }

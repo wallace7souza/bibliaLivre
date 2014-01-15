@@ -1,0 +1,98 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 13",
+  "bookContent": [
+  {"tipo":"calling","texto":"Abrão e Ló separaram-se"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Saiu, pois, Abrão do Egito para o Neguebe, ele e sua mulher e tudo o que tinha, e Ló com ele."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "Era Abrão muito rico; possuía gado, prata e ouro."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Fez as suas jornadas do Neguebe até Betel, até ao lugar onde primeiro estivera a sua tenda, entre Betel e Ai,"
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "até ao lugar do altar, que outrora tinha feito; e aí Abrão invocou o nome do SENHOR."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Ló, que ia com Abrão, também tinha rebanhos, gado e tendas."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "E a terra não podia sustentá-los, para que habitassem juntos, porque eram muitos os seus bens; de sorte que não podiam habitar um na companhia do outro."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Houve contenda entre os pastores do gado de Abrão e os pastores do gado de Ló. Nesse tempo os cananeus e os ferezeus habitavam essa terra."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Disse Abrão a Ló: Não haja contenda entre mim e ti e entre os meus pastores e os teus pastores, porque somos parentes chegados."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Acaso, não está diante de ti toda a terra? Peço-te que te apartes de mim; se fores para a esquerda, irei para a direita; se fores para a direita, irei para a esquerda."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Levantou Ló os olhos e viu toda a campina do Jordão, que era toda bem regada (antes de haver o SENHOR destruído Sodoma e Gomorra), como o jardim do SENHOR, como a terra do Egito, como quem vai para Zoar."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "Então, Ló escolheu para si toda a campina do Jordão e partiu para o Oriente; separaram-se um do outro."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "Habitou Abrão na terra de Canaã; e Ló, nas cidades da campina e ia armando as suas tendas até Sodoma."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Ora, os homens de Sodoma eram maus e grandes pecadores contra o SENHOR."
+    },
+    {"tipo":"calling","texto":"O SENHOR promete a Abrão a terra de Canaã"},
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "Disse o SENHOR a Abrão, depois que Ló se separou dele: Ergue os olhos e olha desde onde estás para o norte, para o sul, para o oriente e para o ocidente;"
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "porque toda essa terra que vês, eu ta darei, a ti e à tua descendência, para sempre."
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "Farei a tua descendência como o pó da terra; de maneira que, se alguém puder contar o pó da terra, então se contará também a tua descendência."
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "Levanta-te, percorre essa terra no seu comprimento e na sua largura; porque eu ta darei."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "E Abrão, mudando as suas tendas, foi habitar nos carvalhais de Manre, que estão junto a Hebrom; e levantou ali um altar ao SENHOR."
+    }
+  ]
+}
