@@ -235,7 +235,6 @@ var BibleUtils = {
   
 };
 
-// function loadCapituloVersiculo(target){
 function loadCapituloVersiculo(target){
 	
 	var c = {capVerMap:{}};
