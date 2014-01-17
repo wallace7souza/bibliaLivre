@@ -56,7 +56,7 @@ var app = {
 $( document ).ready(function() {
     
     
-    $( "#popupCapVerAt,#popupCapVerNt" ).bind({
+    $( "#popupCapVerAT,#popupCapVerNT" ).bind({
         // popupbeforeposition: function(event, ui) { 
         popupafteropen: function(event, ui) { 
             
@@ -113,7 +113,7 @@ $.mobile.defaultPageTransition   = 'none';
 $.mobile.defaultDialogTransition = 'none';
 $.mobile.buttonMarkup.hoverDelay = 0;
 
-    $(".vclick").bind("vclick", function (ev) {
+    $(".vclick").bind("tap", function (ev) {
         // console.log($(ev.target));
         // console.log($(ev.target).parents(".vclick").attr("target"));
         eval($(ev.target).parents(".vclick").attr("target"));
@@ -256,3 +256,7 @@ function navigate(page,perform){
     $.mobile.changePage(page);
 }
 
+function openPopupCapVer(){
+
+    $( "#popupCapVer"+testamento).popup( 'open' );
+}
