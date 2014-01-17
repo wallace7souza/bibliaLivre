@@ -18,21 +18,24 @@
 
 
 	<div data-role="page" id="Inicio">
+			
 		<div data-role="header">
 			<h1>Bíblia Livre</h1>
 		</div>
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a onclick="javascript:navigate('#TestamentoPage',{transition:'slide'},function(){})" > <!-- data-transition="slide" -->
-						<h3>Bíblia</h3>
-						<p>
-							<em>Tradução por João Ferreira de Almeida<br/>(Revista e atualizada)</em>
-						</p>
-				</a></li>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li class="vclick" target="navigate('#TestamentoPage')">
+						<a  >
+					 <!-- data-transition="slide" -->
+							<h3>Bíblia</h3>
+							<p>
+								<em>Tradução por João Ferreira de Almeida<br/>(Revista e atualizada)</em>
+							</p>
+					</a></li>
 
-			</ul>
+				</ul>
 
-		</div>
+			</div>
 		<div data-role="footer">
 			<h4></h4>
 		</div>
@@ -41,14 +44,15 @@
 	<div data-role="page" id="TestamentoPage">
 		<div data-role="header">
 			<h1>Testamentos</h1>
-			<a onclick="javascript:navigate('#Inicio',{transition:'slide',reverse:true})" data-prefetch="true" data-role="button"
+			<a onclick="javascript:navigate('#Inicio')" data-prefetch="true" data-role="button"
 				data-icon="back" data-iconpos="left">Voltar</a>
 
 		</div>
 		<div data-role="content">
-			<ul data-role="listview">
+			<ul data-role="listview" class="vclick" target="navigate('#AntigoTestamentoPage',function(){testamento='AT';})">
 				<!-- data-transition="slide" onclick="testamento='AT'" -->
-				<li><a onclick="javascript:navigate('#AntigoTestamentoPage',{transition:'slide'},function(){testamento='AT';})" >
+				<!-- onclick="javascript:navigate('#AntigoTestamentoPage',{transition:'slide'},function(){testamento='AT';})" -->
+				<li><a  >
 						<h3>Antigo Testamento</h3>
 						<p>
 							<em>39 Livros</em>
@@ -56,7 +60,9 @@
 				</a>
 
 			</li>
-				<li><a onclick="javascript:navigate('#NovoTestamentoPage',{transition:'slide'},function(){testamento='NT';})" href="#NovoTestamentoPage"  > <!-- data-transition="slide" -->
+				<li><a   class="vclick" target="navigate('#NovoTestamentoPage',function(){testamento='NT';})">
+<!-- onclick="javascript:navigate('#NovoTestamentoPage',{transition:'slide'},function(){testamento='NT';})" -->
+				 <!-- data-transition="slide" -->
 						<h3>Novo Testamento</h3>
 						<p>
 							<em>27 Livros</em>
@@ -73,8 +79,7 @@
 	<div data-role="page" id="AntigoTestamentoPage" data-dom-cache="true">
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
 			<h1>Antigo Testamento</h1>
-			<a onclick="javascript:navigate('#TestamentoPage',{transition:'slide',reverse:true})" data-role="button" data-icon="back"
-				data-iconpos="left" >Voltar</a>
+			<a onclick="javascript:navigate('#TestamentoPage')" data-role="button" data-icon="back"	data-iconpos="left" >Voltar</a>
 		</div>
 		<div data-role="content">
 
@@ -111,7 +116,10 @@
 			<ul data-role="listview" width="100%">
 				<!-- 				<li data-role="list-divider">Friday, October 8, 2010 <span -->
 				<!-- 					class="ui-li-count">2</span></li> -->
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Gn'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Gn'; $( '#popupCapVerAt').popup( 'open' );">
+					<a  >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Gn'" -->
+
 						<h2>Gênesis - Gn</h2> <!-- 						<p> --> <!-- 							<strong>You've been invited to a meeting at Filament -->
 						<!-- 								Group in Boston, MA</strong> --> <!-- 						</p> -->
 						<p style="white-space: normal;" >Este livro, que mostra como era "no
@@ -122,7 +130,9 @@
 							<strong>50 Caps.</strong>
 						</p>
 				</a></li>
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ex'" data-rel="popup" >
+				<li class="vclick" target="bookClicked='Ex'; $( '#popupCapVerAt').popup( 'open' );">
+					<a  >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ex'" data-rel="popup" -->
 						<h2>Êxodo - Êx</h2> <!-- 						<p> --> <!-- 							<strong>Boston Conference Planning</strong> -->
 						<!-- 						</p> -->
 						<p style="white-space: normal;">O nome Êxodo significa "saída". Este
@@ -136,7 +146,9 @@
 				</a></li>
 				<!-- 				<li data-role="list-divider">Thursday, October 7, 2010 <span -->
 				<!-- 					class="ui-li-count">1</span></li> -->
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Lv'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Lv'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Lv'" data-rel="popup" -->
 						<h2>Levítico - Lv</h2> <!-- 						<p> --> <!-- 							<strong>Re: Dinner Tonight</strong> -->
 						<!-- 						</p> -->
 						<p style="white-space: normal;">O nome do livro se deriva do nome de uma
@@ -147,7 +159,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Nm'" data-rel="popup"> 
+				<li class="vclick" target="bookClicked='Nm'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+					<!-- href="#popupCapVerAt" onclick="bookClicked='Nm'" data-rel="popup"  -->
 						<h2>Números - Nm</h2>
 						<p style="white-space: normal;">Os israelitas vagaram pelo deserto
 							durante quarenta anos, antes de entrar em Canaã, "a Terra
@@ -158,7 +172,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Dt'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Dt'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Dt'" data-rel="popup" -->
 						<h2>Deuteronômio - Dt</h2>
 						<p style="white-space: normal;">Moisés pronunciou três discursos de
 							despedida pouco antes de morrer. Neles, recapitulou, com o povo,
@@ -169,7 +185,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Js'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Js'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Js'" data-rel="popup" -->
 						<h2>Josué - Js</h2>
 						<p style="white-space: normal;">Josué foi o líder dos exércitos
 							israelitas em suas vitórias sobre seus inimigos, os cananeus. O
@@ -180,7 +198,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Jz'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Jz'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Jz'" data-rel="popup" -->
 						<h2>Juízes - Jz</h2>
 						<p style="white-space: normal;">Os israelitas, constantemente,
 							desobedeciam a Deus e caíam nas mãos de países opressores. Deus
@@ -190,7 +210,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Rt'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Rt'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Rt'" data-rel="popup" -->
 						<h2>Rute - Rt</h2>
 						<p style="white-space: normal;">O amor e a dedicação de Rute à sua sogra,
 							Noemi, são o tema deste livro.</p>
@@ -199,7 +221,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='_1Sm'" data-rel="popup">
+				<li class="vclick" target="bookClicked='_1Sm'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='_1Sm'" data-rel="popup" -->
 						<h2>1 Samuel - 1Sm</h2>
 						<p style="white-space: normal;">Samuel foi o líder de Israel no período
 							compreendido entre os juízes e Saul, o primeiro rei. Quando a
@@ -209,7 +233,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='_2Sm'" data-rel="popup">
+				<li class="vclick" target="bookClicked='_2Sm'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='_2Sm'" data-rel="popup" -->
 						<h2>2 Samuel - 2Sm</h2>
 						<p style="white-space: normal;">Sobe o reinado de Davi, a nação se unificou
 							e se fortaleceu. No entanto, depois dos pecados de Davi,
@@ -220,7 +246,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='_1Rs'" data-rel="popup">
+				<li class="vclick" target="bookClicked='_1Rs'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='_1Rs'" data-rel="popup" -->
 						<h2>1 Reis - 1Rs</h2>
 						<p style="white-space: normal;">Este livro inicia com o reinado de
 							Salomão em Israel. Depois de sua morte, o reino se dividiu em
@@ -231,7 +259,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='_2Rs'" data-rel="popup">
+				<li class="vclick" target="bookClicked='_2Rs'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='_2Rs'" data-rel="popup" -->
 						<h2>2 Reis - 2Rs</h2>
 						<p style="white-space: normal;">Israel foi conquistada pela Assíria em
 							721 a.C., e Judá, pela Babilônia, em 586 a.C. Estes
@@ -243,7 +273,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='_1Cr'" data-rel="popup">
+				<li class="vclick" target="bookClicked='_1Cr'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='_1Cr'" data-rel="popup" -->
 						<h2>1 Crônicas - 1Cr</h2>
 						<p style="white-space: normal;">Este livro inicia com as genealogias de
 							Adão até Davi e, em seguida, conta os acontecimentos do reinado
@@ -253,7 +285,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='_2Cr'" data-rel="popup">
+				<li class="vclick" target="bookClicked='_2Cr'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='_2Cr'" data-rel="popup" -->
 						<h2>2 Crônicas - 2Cr</h2>
 						<p style="white-space: normal;">Este livro abrange o mesmo período que
 							2Reis, mas com ênfase em Judá, o Reino do Sul, e seus
@@ -263,7 +297,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ed'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ed'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ed'" data-rel="popup" -->
 						<h2>Esdras - Ed</h2>
 						<p style="white-space: normal;">Depois de estar cativo na Babilônia por
 							algumas décadas, o povo de Deus retornou a Jerusalém. Um de seus
@@ -274,7 +310,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ne'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ne'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ne'" data-rel="popup" -->
 						<h2>Neemias - Ne</h2>
 						<p style="white-space: normal;">Depois do templo, também foi reconstruída
 							a muralha de Jerusalém. Neemias foi quem dirigiu esse
@@ -285,7 +323,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Es'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Es'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Es'" data-rel="popup" -->
 						<h2>Ester - Et</h2>
 						<p style="white-space: normal;">Este livro relata a história de uma
 							rainha judia da Pérsia, que denunciou um complô que visava
@@ -297,7 +337,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Jo'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Jo'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Jo'" data-rel="popup" -->
 						<h2>Jó - Jó</h2>
 						<p style="white-space: normal;">A pergunta "Por que sofrem os inocentes?"
 							é tratada nesta história bíblica.</p>
@@ -307,7 +349,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Sl'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Sl'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Sl'" data-rel="popup" -->
 						<h2>Salmos - Sl</h2>
 						<p style="white-space: normal;">Estas 150 orações foram usadas pelos
 							hebreus para expressar seu relacionamento com Deus. Abrangem todo
@@ -318,7 +362,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Pv'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Pv'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Pv'" data-rel="popup" -->
 						<h2>Provérbios - Pv</h2>
 						<p style="white-space: normal;">Este é o livro de máximas de sabedoria,
 							de ensinamentos éticos e de senso comum acerca de como viver uma
@@ -329,7 +375,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ec'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ec'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ec'" data-rel="popup" -->
 						<h2>Eclesiastes - Ec</h2>
 						<p style="white-space: normal;">Na sua busca por felicidade e pelo
 							sentido da vida, este escritor, conhecido como "filósofo" ou
@@ -340,7 +388,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ct'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ct'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ct'" data-rel="popup" -->
 						<h2>Cântico dos Cânticos - Ct</h2>
 						<p style="white-space: normal;">Este poema descreve o gozo e êxtase do
 							amor. Simbolicamente, tem sido aplicado ao amor de Deus por
@@ -350,7 +400,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Is'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Is'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Is'" data-rel="popup" -->
 						<h2>Isaías - Is</h2>
 						<p style="white-space: normal;">O profeta Isaías levou a mensagem do
 							juízo de Deus às nações, anunciou um rei futuro, à semelhança de
@@ -360,7 +412,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Jr'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Jr'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Jr'" data-rel="popup" -->
 						<h2>Jeremias - Jr</h2>
 						<p style="white-space: normal;">Muito antes da destruição de Judá pela
 							Babilônia Jeremias predisse o justo juízo de Deus. Embora sua
@@ -371,7 +425,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Lm'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Lm'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Lm'" data-rel="popup" -->
 						<h2>Lamentações de Jeremias - Lm</h2>
 						<p style="white-space: normal;">Tal qual Jeremias havia predito,
 							Jerusalém caiu cativa da Babilônia. Este livro registra cinco
@@ -381,7 +437,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ez'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ez'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ez'" data-rel="popup" -->
 						<h2>Ezequiel - Ez</h2>
 						<p style="white-space: normal;">A mensagem de Ezequiel foi dada aos
 							Judeus cativos na Babilônia. Ezequiel usou histórias e parábolas
@@ -392,7 +450,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Dn'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Dn'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Dn'" data-rel="popup" -->
 						<h2>Daniel - Dn</h2>
 						<p style="white-space: normal;">Daniel se manteve fiel a Deus, mesmo
 							enfrentando muitas pressões quando esteve cativo na Babilônia.
@@ -402,7 +462,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Os'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Os'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Os'" data-rel="popup" -->
 						<h2>Oseias - Os</h2>
 						<p style="white-space: normal;">Oseias se vale de sua experiência
 							conjugal, em que ele era dedicado à sua esposa, mesmo sabendo que
@@ -414,7 +476,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Jl'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Jl'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Jl'" data-rel="popup" -->
 						<h2>Joel - Jl</h2>
 						<p style="white-space: normal;">Depois de uma praga de gafanhotos, Joel
 							admoesta o povo para que se arrependa.</p>
@@ -423,7 +487,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Am'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Am'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Am'" data-rel="popup" -->
 						<h2>Amós - Am</h2>
 						<p style="white-space: normal;">Durante um tempo de prosperidade, este
 							profeta deJudá pregou aos ricos líderes de Israel sobre o juízo
@@ -434,7 +500,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ob'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ob'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ob'" data-rel="popup" -->
 						<h2>Obadias - Ob</h2>
 						<p style="white-space: normal;">
 							Obadias profetizou o juízo sobre Edom, um país vizinho de Israel.
@@ -445,7 +513,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Jn'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Jn'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Jn'" data-rel="popup" -->
 						<h2>Jonas - Jn</h2>
 						<p style="white-space: normal;">Jonas não queria pregar para a gente de
 							Nínive, que era inimiga do país do profeta. Quando, finalmente,
@@ -456,7 +526,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Mq'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Mq'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Mq'" data-rel="popup" -->
 						<h2>Miqueias - Mq</h2>
 						<p style="white-space: normal;">A mensagem de Miqueias para Judá era de
 							juízo, em vez de perdão, esperança e restauração. Especialmente
@@ -467,7 +539,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Na'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Na'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Na'" data-rel="popup" -->
 						<h2>Naum - Na</h2>
 						<p style="white-space: normal;">Naum anunciou que Deus destruiria o povo
 							de Nínive por sua crueldade na guerra.</p>
@@ -476,7 +550,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Hc'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Hc'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Hc'" data-rel="popup" -->
 						<h2>Habacuque - Hc</h2>
 						<p style="white-space: normal;">Este livro apresenta um diálogo entre
 							Deus e Habacuque sobre a justiça e o sofrimento.</p>
@@ -485,7 +561,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Sf'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Sf'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Sf'" data-rel="popup" -->
 						<h2>Sofonias - Sf</h2>
 						<p style="white-space: normal;">Este profeta anunciou o Dia do Senhor,
 							que levaria juizo a Judá e às nações vizinhas. Esse Dia, que
@@ -497,7 +575,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ag'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ag'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ag'" data-rel="popup" -->
 						<h2>Ageu - Ag</h2>
 						<p style="white-space: normal;">Depois que o povo voltou do exílio, Ageu,
 							admoestou as pessoas para que dessem prioridade a Deus e
@@ -508,7 +588,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Zc'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Zc'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Zc'" data-rel="popup" -->
 						<h2>Zacarias - Zc</h2>
 						<p style="white-space: normal;">Como Ageu, Zacarias instou o povo a
 							reconstuir o templo, assegurando-lhes a ajuda e bênçãos de Deus.
@@ -518,7 +600,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerAt" onclick="bookClicked='Ml'" data-rel="popup">
+				<li class="vclick" target="bookClicked='Ml'; $( '#popupCapVerAt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerAt" onclick="bookClicked='Ml'" data-rel="popup" -->
 						<h2>Malaquias - Ml</h2>
 						<p style="white-space: normal;">Após o retorno do exílio, o povo voltou a
 							descuidar de sua vida religiosa. Malaquias passou a inspirá-los
@@ -539,8 +623,7 @@
 	<div data-role="page" id="NovoTestamentoPage" data-dom-cache="true">
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
 			<h1>Novo Testamento</h1>
-			<a onclick="javascript:navigate('#TestamentoPage',{transition:'slide',reverse:true})" data-role="button" data-icon="back"
-				data-iconpos="left">Voltar</a>
+			<a onclick="javascript:navigate('#TestamentoPage')" data-role="button" data-icon="back"	data-iconpos="left">Voltar</a>
 		</div>
 		<div data-role="content">
 
@@ -576,7 +659,9 @@
 
 			<ul data-role="listview" >
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Mt'">
+				<li class="vclick" target="bookClicked='Mt'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Mt'" -->
 						<h2>Mateus - Mt</h2>
 						<p style="white-space: normal;">Este Evangelho cita muitos textos do
 							Antigo Testamento. Ele se destinava, primordialmente, ao público
@@ -590,7 +675,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Mc'">
+				<li class="vclick" target="bookClicked='Mc'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Mc'" -->
 						<h2>Marcos - Mc</h2>
 						<p style="white-space: normal;">Marcos escreveu um Evangelho curto,
 							conciso e cheio de ação. Seu objetivo era aprofundar a fé e a
@@ -601,7 +688,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Lc'">
+				<li class="vclick" target="bookClicked='Lc'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Lc'" -->
 						<h2>Lucas - Lc</h2>
 						<p style="white-space: normal;">Neste Evangelho é enfatizado como a
 							salvação em Jesus está ao alcance de todos. O evangelista mostra
@@ -613,7 +702,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Jo'">
+				<li class="vclick" target="bookClicked='Jo'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Jo'" -->
 						<h2>João - Jo</h2>
 						<p style="white-space: normal;">O Evangelho de João, pela sua forma, se
 							coloca à parte dos outros três, João organiza sua mensagem
@@ -626,7 +717,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='At'">
+				<li class="vclick" target="bookClicked='At'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='At'" -->
 						<h2>Atos dos Apóstolos - At</h2>
 						<p style="white-space: normal;">Quando Jesus deixou os seus discípulos, o
 							Espírito Santo foi habitar com eles. Este livro foi escrito por
@@ -639,7 +732,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Rm'">
+				<li class="vclick" target="bookClicked='Rm'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Rm'" -->
 						<h2>Romanos</h2>
 						<p style="white-space: normal;">Nesta importante Epístola, Paulo escreve
 							aos romanos sobre a vida no Espírito, que é dada pela fé aos que
@@ -652,7 +747,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Co'">
+				<li class="vclick" target="bookClicked='_1Co'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Co'" -->
 						<h2>1 Coríntios - 1Co</h2>
 						<p style="white-space: normal;">Esta Epístola trata especialmente dos
 							problemas que a igreja de Corinto estava enfrentado: dissensão,
@@ -664,7 +761,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Co'">
+				<li class="vclick" target="bookClicked='_2Co'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Co'" -->
 						<h2>2 Coríntios - 2Co</h2>
 						<p style="white-space: normal;">Nesta Epístola, o apóstolo Paulo escreve
 							sobre seu relacionamento com a igreja de Corinto e as
@@ -676,7 +775,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Gl'">
+				<li class="vclick" target="bookClicked='Gl'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Gl'" -->
 						<h2>Gálatas - Gl</h2>
 						<p style="white-space: normal;">Esta Epístola expõe a liberdade da pessoa
 							que crê em Cristo com respeito à lei. Paulo declara que é somente
@@ -687,7 +788,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Ef'">
+				<li class="vclick" target="bookClicked='Ef'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Ef'" -->
 						<h2>Efésios - Ef</h2>
 						<p style="white-space: normal;">O tema central desta Epístola é o
 							propósito eterno de Deus: Jesus Cristo é a cabeça da Igreja, que
@@ -698,7 +801,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Fp'">
+				<li class="vclick" target="bookClicked='Fp'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Fp'" -->
 						<h2>Filipenses - Fp</h2>
 						<p style="white-space: normal;">A ênfase desta Epístola está no gozo que
 							o crente em Cristo encontra em todas as circunstâncias da vida. O
@@ -709,7 +814,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Cl'">
+				<li class="vclick" target="bookClicked='Cl'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Cl'" -->
 						<h2>Colossenses - Cl</h2>
 						<p style="white-space: normal;">Nesta Epístola, o apóstolo Paulo exorta
 							os cristãos de Colossos para que abandonem suas superstições e
@@ -719,7 +826,9 @@
 						</p>
 				</a></li>
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Ts'">
+				<li class="vclick" target="bookClicked='_1Ts'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Ts'" -->
 						<h2>1 Tessalonicenses - 1Ts</h2>
 						<p style="white-space: normal;">O apóstolo Paulo dá orientações aos
 							cristãos de Tessalônica a respeito da votla de Jesus ao mundo.</p>
@@ -729,7 +838,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Ts'">
+				<li class="vclick" target="bookClicked='_2Ts'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Ts'" -->
 						<h2>2 Tessalonicenses - 2Ts</h2>
 						<p style="white-space: normal;">Como em sua primeira Epístola, o apóstolo
 							Paulo fala sobre o retorno de Jesus ao mundo. Também trata de
@@ -740,7 +851,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Tm'">
+				<li class="vclick" target="bookClicked='_1Tm'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Tm'" -->
 						<h2>1 Timóteo - 1Tm</h2>
 						<p style="white-space: normal;">Esta Epístola serve de orientação a
 							Timóteo, um jovem líder da Igreja primitiva. O apóstolo Paulo lhe
@@ -752,7 +865,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Tm'">
+				<li class="vclick" target="bookClicked='_2Tm'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Tm'" -->
 						<h2>2 Timóteo - 2Tm</h2>
 						<p style="white-space: normal;">Esta é a última Epístola escrita pelo
 							apóstolo Paulo. Nela lança um último desafio a seus companheiros
@@ -763,7 +878,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Tt'">
+				<li class="vclick" target="bookClicked='Tt'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Tt'" -->
 						<h2>Tito - Tt</h2>
 						<p style="white-space: normal;">Tito era ministro em Creta. Nesta
 							Epístola, o apóstolo Paulo o orienta sobre como ajudar os novos
@@ -774,7 +891,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Fm'">
+				<li class="vclick" target="bookClicked='Fm'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Fm'" -->
 						<h2>Filemon - Fm</h2>
 						<p style="white-space: normal;">Filemon é instado a perdoar seu escravo,
 							Onésimo, que havia fugido. Filemon deveria aceitá-lo de volta
@@ -785,7 +904,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Hb'">
+				<li class="vclick" target="bookClicked='Hb'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Hb'" -->
 						<h2>Hebreus - Hb</h2>
 						<p style="white-space: normal;">Esta Epístola exorta os novos cristãos a
 							não observarem mais rituais e cerimônias tradicionais, pois, em
@@ -796,7 +917,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Tg'">
+				<li class="vclick" target="bookClicked='Tg'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Tg'" -->
 						<h2>Tiago - Tg</h2>
 						<p style="white-space: normal;">Tiago aconselha os cristãos a viverem na
 							prática da fé e, além disso, oferece ideias sobre como isso pode
@@ -807,7 +930,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Pe'">
+				<li class="vclick" target="bookClicked='_1Pe'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Pe'" -->
 						<h2>1 Pedro - 1Pe</h2>
 						<p style="white-space: normal;">Esta Epístola foi escrita para confortar
 							os cristãos da Igreja primitiva que estavam sendo perseguidos por
@@ -818,7 +943,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Pe'">
+				<li class="vclick" target="bookClicked='_2Pe'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Pe'" -->
 						<h2>2 Pedro - 2Pe</h2>
 						<p style="white-space: normal;">Nesta Epístola o apóstolo Pedro adverte
 							os cristãos sobre os falsos mestres e os estimula a continuarem
@@ -829,7 +956,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Jo'">
+				<li class="vclick" target="bookClicked='_1Jo'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Jo'" -->
 						<h2>1 João - 1Jo</h2>
 						<p style="white-space: normal;">Esta Espítola explica verdades básicas
 							sobre a vida cristã com ênfase no mandamento de amarem uns aos
@@ -840,7 +969,10 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Jo'">
+				<li class="vclick" target="bookClicked='_2Jo'; $( '#popupCapVerNt').popup( 'open' );">
+
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Jo'" -->
 						<h2>2 João - 2Jo</h2>
 						<p style="white-space: normal;">Nesta Espítola, dirigida à "senhora
 							eleita e aos seus filhos", adverte os cristãos quanto aos falsos
@@ -851,7 +983,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_3Jo'">
+				<li class="vclick" target="bookClicked='_3Jo'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_3Jo'" -->
 						<h2>3 João - 3Jo</h2>
 						<p style="white-space: normal;">Em contraste com sua Segunda Epístola,
 							esta fala sobre a necessidade de receber os que pregam a Cristo.
@@ -863,7 +997,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Jd'">
+				<li class="vclick" target="bookClicked='Jd'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Jd'" -->
 						<h2>Judas - Jd</h2>
 						<p style="white-space: normal;">Judas adverte seus leitores sobre a má
 							influência de pessoas alheias à irmandade do santos.</p>
@@ -873,7 +1009,9 @@
 				</a></li>
 
 
-				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Ap'">
+				<li class="vclick" target="bookClicked='Ap'; $( '#popupCapVerNt').popup( 'open' );">
+					<a >
+						<!-- href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Ap'" -->
 						<h2>Apocalipse - Ap</h2>
 						<p style="white-space: normal;">Este livro foi escrito para encorajar os
 							cristãos que estavam sendo perseguidos e para firmá-los na

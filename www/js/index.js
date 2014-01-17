@@ -108,6 +108,18 @@ $(document).on("pageshow","#LivroPage",function(){
     });
 
 
+//Desabilitando efeitos que prejudicando performance
+$.mobile.defaultPageTransition   = 'none';
+$.mobile.defaultDialogTransition = 'none';
+$.mobile.buttonMarkup.hoverDelay = 0;
+
+    $(".vclick").bind("vclick", function (ev) {
+        // console.log($(ev.target));
+        // console.log($(ev.target).parents(".vclick").attr("target"));
+        eval($(ev.target).parents(".vclick").attr("target"));
+          //$(ev.target).parents(".vclick").find("button.targetClick").click();
+    });
+
 });
 
 
@@ -232,11 +244,15 @@ console.log(url);
     });
 }
 
-function navigate(page,transition,perform){
-if(perform)
-    perform();
-if(!transition)
-        transition={};
-$.mobile.changePage(page,transition);
+function navigate(page,perform){
+    console.log(typeof perform);
+    if(typeof perform==='function'){
+        console.log(perform);
+        perform();
+        console.log(testamento);
+    }
 
+        console.log(page);
+    $.mobile.changePage(page);
 }
+
