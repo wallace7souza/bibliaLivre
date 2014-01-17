@@ -56,7 +56,7 @@ var app = {
 $( document ).ready(function() {
     
     
-    $( "#popupCapVerAt" ).bind({
+    $( "#popupCapVerAt,#popupCapVerNt" ).bind({
         // popupbeforeposition: function(event, ui) { 
         popupafteropen: function(event, ui) { 
             
@@ -68,7 +68,7 @@ $( document ).ready(function() {
       });
 
     console.log('popup abrindo...');
-    var caps =  BibleUtils.AT[bookClicked].totalCapitulos;
+    var caps =  BibleUtils[testamento][bookClicked].totalCapitulos;
 
         //$("#slider-capitulo-at").attr("value",1).attr("max",caps); 
 
@@ -81,8 +81,8 @@ $( document ).ready(function() {
         .attr('data-popup-enabled',true).slider("refresh"); */
 
 
-        loadCapitulos('#select-cap-at');
-        loadVersiculos('#select-ver-at',"1");
+        loadCapitulos("#select-cap-"+testamento.toLowerCase());
+        loadVersiculos("#select-ver-"+testamento.toLowerCase(),"1");
 
         // $('#select-cap-at,#select-ver-at').selectmenu('refresh', true);
         // $("#slider-capitulo-at").attr('value',1).slider('refresh');
@@ -126,7 +126,7 @@ function setVersiculoBehavior(hl){
 
 function loadCapitulos(target){
 
-        var caps =  BibleUtils.AT[bookClicked].totalCapitulos;
+        var caps =  BibleUtils[testamento][bookClicked].totalCapitulos;
         capitulo=1;
         $(target).empty();
          for (var i = 0; i < caps; i++) {

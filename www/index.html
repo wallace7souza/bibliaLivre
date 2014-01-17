@@ -541,9 +541,39 @@
 		</div>
 		<div data-role="content">
 
+<div data-role="popup" id="popupCapVerNt" data-theme="a" data-overlay-theme="a" class="ui-corner-all popup-cap-ver">
+				         
+					<div style="padding:10px 20px;">
+						 <div data-role="header" data-theme="a" class="ui-corner-top">
+						<h1>Livro</h1>
+						</div>
+
+						<fieldset data-role="controlgroup" id="controlgroup-cap-ver-nt">
+					    
+					        <label for="select-choice-month">Cap: 1</label>
+					        <select name="select-cap-nt" id="select-cap-nt" onChange="capitulo=this.value;loadVersiculos('#select-ver-nt',this.value);">
+					            <!-- <option value="1">Cap 1</option>
+					            <option value="2">Cap 2</option> -->
+					        </select>
+					    
+					        <label for="select-ver-day">Versículo</label>
+					        <select name="select-ver-day" id="select-ver-nt" onChange="versiculo=this.value;"> 
+					            <!-- <option value="1">Ver 1</option> -->
+					        </select>
+					    
+					        
+					    </fieldset>
+					
+			
+						<a href="javascript:void()" onclick="$( '#popupCapVerNt').popup( 'close' )" data-role="button" data-inline="true" data-rel="back" data-theme="c">Voltar</a>    
+						<a id="NTgoToBook" href="javascript:void(0)" data-role="button" data-inline="true" data-theme="b" onclick="loadBook(true)">Ir</a>  
+					</div>
+				</div>
+
+
 			<ul data-role="listview" >
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Mt'">
 						<h2>Mateus - Mt</h2>
 						<p style="white-space: normal;">Este Evangelho cita muitos textos do
 							Antigo Testamento. Ele se destinava, primordialmente, ao público
@@ -557,7 +587,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Mc'">
 						<h2>Marcos - Mc</h2>
 						<p style="white-space: normal;">Marcos escreveu um Evangelho curto,
 							conciso e cheio de ação. Seu objetivo era aprofundar a fé e a
@@ -568,7 +598,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Lc'">
 						<h2>Lucas - Lc</h2>
 						<p style="white-space: normal;">Neste Evangelho é enfatizado como a
 							salvação em Jesus está ao alcance de todos. O evangelista mostra
@@ -580,7 +610,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Jo'">
 						<h2>João - Jo</h2>
 						<p style="white-space: normal;">O Evangelho de João, pela sua forma, se
 							coloca à parte dos outros três, João organiza sua mensagem
@@ -593,7 +623,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='At'">
 						<h2>Atos dos Apóstolos - At</h2>
 						<p style="white-space: normal;">Quando Jesus deixou os seus discípulos, o
 							Espírito Santo foi habitar com eles. Este livro foi escrito por
@@ -606,7 +636,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Rm'">
 						<h2>Romanos</h2>
 						<p style="white-space: normal;">Nesta importante Epístola, Paulo escreve
 							aos romanos sobre a vida no Espírito, que é dada pela fé aos que
@@ -619,7 +649,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Co'">
 						<h2>1 Coríntios - 1Co</h2>
 						<p style="white-space: normal;">Esta Epístola trata especialmente dos
 							problemas que a igreja de Corinto estava enfrentado: dissensão,
@@ -631,7 +661,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Co'">
 						<h2>2 Coríntios - 2Co</h2>
 						<p style="white-space: normal;">Nesta Epístola, o apóstolo Paulo escreve
 							sobre seu relacionamento com a igreja de Corinto e as
@@ -643,7 +673,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Gl'">
 						<h2>Gálatas - Gl</h2>
 						<p style="white-space: normal;">Esta Epístola expõe a liberdade da pessoa
 							que crê em Cristo com respeito à lei. Paulo declara que é somente
@@ -654,7 +684,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Ef'">
 						<h2>Efésios - Ef</h2>
 						<p style="white-space: normal;">O tema central desta Epístola é o
 							propósito eterno de Deus: Jesus Cristo é a cabeça da Igreja, que
@@ -665,7 +695,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Fp'">
 						<h2>Filipenses - Fp</h2>
 						<p style="white-space: normal;">A ênfase desta Epístola está no gozo que
 							o crente em Cristo encontra em todas as circunstâncias da vida. O
@@ -676,7 +706,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Cl'">
 						<h2>Colossenses - Cl</h2>
 						<p style="white-space: normal;">Nesta Epístola, o apóstolo Paulo exorta
 							os cristãos de Colossos para que abandonem suas superstições e
@@ -686,7 +716,7 @@
 						</p>
 				</a></li>
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Ts'">
 						<h2>1 Tessalonicenses - 1Ts</h2>
 						<p style="white-space: normal;">O apóstolo Paulo dá orientações aos
 							cristãos de Tessalônica a respeito da votla de Jesus ao mundo.</p>
@@ -696,7 +726,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Ts'">
 						<h2>2 Tessalonicenses - 2Ts</h2>
 						<p style="white-space: normal;">Como em sua primeira Epístola, o apóstolo
 							Paulo fala sobre o retorno de Jesus ao mundo. Também trata de
@@ -707,7 +737,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Tm'">
 						<h2>1 Timóteo - 1Tm</h2>
 						<p style="white-space: normal;">Esta Epístola serve de orientação a
 							Timóteo, um jovem líder da Igreja primitiva. O apóstolo Paulo lhe
@@ -719,7 +749,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Tm'">
 						<h2>2 Timóteo - 2Tm</h2>
 						<p style="white-space: normal;">Esta é a última Epístola escrita pelo
 							apóstolo Paulo. Nela lança um último desafio a seus companheiros
@@ -730,7 +760,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Tt'">
 						<h2>Tito - Tt</h2>
 						<p style="white-space: normal;">Tito era ministro em Creta. Nesta
 							Epístola, o apóstolo Paulo o orienta sobre como ajudar os novos
@@ -741,7 +771,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Fm'">
 						<h2>Filemon - Fm</h2>
 						<p style="white-space: normal;">Filemon é instado a perdoar seu escravo,
 							Onésimo, que havia fugido. Filemon deveria aceitá-lo de volta
@@ -752,7 +782,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Hb'">
 						<h2>Hebreus - Hb</h2>
 						<p style="white-space: normal;">Esta Epístola exorta os novos cristãos a
 							não observarem mais rituais e cerimônias tradicionais, pois, em
@@ -763,7 +793,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Tg'">
 						<h2>Tiago - Tg</h2>
 						<p style="white-space: normal;">Tiago aconselha os cristãos a viverem na
 							prática da fé e, além disso, oferece ideias sobre como isso pode
@@ -774,7 +804,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Pe'">
 						<h2>1 Pedro - 1Pe</h2>
 						<p style="white-space: normal;">Esta Epístola foi escrita para confortar
 							os cristãos da Igreja primitiva que estavam sendo perseguidos por
@@ -785,7 +815,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Pe'">
 						<h2>2 Pedro - 2Pe</h2>
 						<p style="white-space: normal;">Nesta Epístola o apóstolo Pedro adverte
 							os cristãos sobre os falsos mestres e os estimula a continuarem
@@ -796,7 +826,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_1Jo'">
 						<h2>1 João - 1Jo</h2>
 						<p style="white-space: normal;">Esta Espítola explica verdades básicas
 							sobre a vida cristã com ênfase no mandamento de amarem uns aos
@@ -807,7 +837,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_2Jo'">
 						<h2>2 João - 2Jo</h2>
 						<p style="white-space: normal;">Nesta Espítola, dirigida à "senhora
 							eleita e aos seus filhos", adverte os cristãos quanto aos falsos
@@ -818,7 +848,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='_3Jo'">
 						<h2>3 João - 3Jo</h2>
 						<p style="white-space: normal;">Em contraste com sua Segunda Epístola,
 							esta fala sobre a necessidade de receber os que pregam a Cristo.
@@ -830,7 +860,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Jd'">
 						<h2>Judas - Jd</h2>
 						<p style="white-space: normal;">Judas adverte seus leitores sobre a má
 							influência de pessoas alheias à irmandade do santos.</p>
@@ -840,7 +870,7 @@
 				</a></li>
 
 
-				<li><a href="index.html">
+				<li><a href="#popupCapVerNt" data-rel="popup" onclick="bookClicked='Ap'">
 						<h2>Apocalipse - Ap</h2>
 						<p style="white-space: normal;">Este livro foi escrito para encorajar os
 							cristãos que estavam sendo perseguidos e para firmá-los na
