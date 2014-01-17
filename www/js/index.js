@@ -232,4 +232,11 @@ console.log(url);
     });
 }
 
+function navigate(page,transition,perform){
+if(perform)
+    perform();
+if(!transition)
+        transition={};
+$.mobile.changePage(page,transition);
 
+}

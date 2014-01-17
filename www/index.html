@@ -23,7 +23,7 @@
 		</div>
 		<div data-role="content">
 			<ul data-role="listview">
-				<li><a href="#TestamentoPage" data-transition="slide">
+				<li><a onclick="javascript:navigate('#TestamentoPage',{transition:'slide'},function(){})" > <!-- data-transition="slide" -->
 						<h3>Bíblia</h3>
 						<p>
 							<em>Tradução por João Ferreira de Almeida<br/>(Revista e atualizada)</em>
@@ -41,19 +41,22 @@
 	<div data-role="page" id="TestamentoPage">
 		<div data-role="header">
 			<h1>Testamentos</h1>
-			<a href="#Inicio" data-prefetch="true" data-role="button"
-				data-icon="back" data-iconpos="left" data-rel="back">Voltar</a>
+			<a onclick="javascript:navigate('#Inicio',{transition:'slide',reverse:true})" data-prefetch="true" data-role="button"
+				data-icon="back" data-iconpos="left">Voltar</a>
 
 		</div>
 		<div data-role="content">
 			<ul data-role="listview">
-				<li><a href="#AntigoTestamentoPage" data-transition="slide" onclick="testamento='AT'">
+				<!-- data-transition="slide" onclick="testamento='AT'" -->
+				<li><a onclick="javascript:navigate('#AntigoTestamentoPage',{transition:'slide'},function(){testamento='AT';})" >
 						<h3>Antigo Testamento</h3>
 						<p>
 							<em>39 Livros</em>
 						</p>
-				</a></li>
-				<li><a href="#NovoTestamentoPage" data-transition="slide" onclick="testamento='NT'">
+				</a>
+
+			</li>
+				<li><a onclick="javascript:navigate('#NovoTestamentoPage',{transition:'slide'},function(){testamento='NT';})" href="#NovoTestamentoPage"  > <!-- data-transition="slide" -->
 						<h3>Novo Testamento</h3>
 						<p>
 							<em>27 Livros</em>
@@ -70,8 +73,8 @@
 	<div data-role="page" id="AntigoTestamentoPage" data-dom-cache="true">
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
 			<h1>Antigo Testamento</h1>
-			<a href="#TestamentoPage" data-role="button" data-icon="back"
-				data-iconpos="left" data-rel="back">Voltar</a>
+			<a onclick="javascript:navigate('#TestamentoPage',{transition:'slide',reverse:true})" data-role="button" data-icon="back"
+				data-iconpos="left" >Voltar</a>
 		</div>
 		<div data-role="content">
 
@@ -536,8 +539,8 @@
 	<div data-role="page" id="NovoTestamentoPage" data-dom-cache="true">
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
 			<h1>Novo Testamento</h1>
-			<a href="#TestamentoPage" data-role="button" data-icon="back"
-				data-iconpos="left" data-rel="back">Voltar</a>
+			<a onclick="javascript:navigate('#TestamentoPage',{transition:'slide',reverse:true})" data-role="button" data-icon="back"
+				data-iconpos="left">Voltar</a>
 		</div>
 		<div data-role="content">
 
