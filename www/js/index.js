@@ -113,7 +113,7 @@ $.mobile.defaultPageTransition   = 'none';
 $.mobile.defaultDialogTransition = 'none';
 $.mobile.buttonMarkup.hoverDelay = 0;
 
-    $(".vclick").bind("tap", function (ev) {
+    $(".vclick").bind("click", function (ev) {
         // console.log($(ev.target));
         // console.log($(ev.target).parents(".vclick").attr("target"));
         eval($(ev.target).parents(".vclick").attr("target"));
