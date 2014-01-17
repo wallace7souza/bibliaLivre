@@ -1036,15 +1036,15 @@
 
 		<div class="ui-bar">
 			<a href="#" data-role="button" data-icon="back"	data-iconpos="left" data-transition="flow" data-rel="back">Voltar</a>
-			<h1 id="headText">
+					<!-- <h1 id="headText">
 
 
-			</h1>
-        <label for="select-choice-1" class="ui-hidden-accessible ui-btn-right"></label>
-        <select name="select-livro" id="select-livro" data-mini="true" data-inline="true" onChange="capitulo=this.value;versiculo=1;loadBook(false);">
+					</h1> -->
+		        <label for="select-choice-1" class="ui-hidden-accessible ui-btn-right"></label>
+		        <select name="select-livro" id="select-livro" data-mini="true" data-inline="true" onChange="capitulo=this.value;versiculo=1;loadBook(false);">
             
-        </select>
-    </div>
+       				 </select>
+    		</div>
 		</div>
 		<div data-role="content" id="livro-content">
 		<h4>
@@ -1055,10 +1055,15 @@
 
         </div>
 
-        </div>
-		<div data-role="footer">
-			<h4></h4>
+		<div style="text-align: center;">
+				<button class=" ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l" id="prevBook" onclick="console.log('prev');--capitulo;versiculo=1;loadBook(false); $('#select-livro').val(capitulo).selectmenu('refresh', true);"></button>
+				<strong id="footerText" ></strong>
+				<button class=" ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r" id="nextBook" onclick="console.log('next');++capitulo;versiculo=1;loadBook(false); $('#select-livro').val(capitulo).selectmenu('refresh', true);" ></button>
 		</div>
+
+        </div>
+<!-- 		<div data-role="footer">
+		</div> -->
 	</div>
 
 </body>

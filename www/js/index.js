@@ -199,6 +199,8 @@ var url = ("./"+testamento+"/"+bookClicked+"/"+capitulo+".json").toLowerCase();
 console.log(url);
      $.getJSON(url, function(book){
         
+        capitulo = parseInt(capitulo);
+
         $("#bookName,#bookHeader").empty();
 
 
@@ -212,8 +214,27 @@ console.log(url);
         $("#contentBook").empty();
 
         headText = BibleUtils[testamento][bookClicked].abrev+" "+capitulo;//+":"+versiculo;
+        $("#headText,#footerText").html(headText);
         // XGH NO JUTSO!!!
         // $("#headText").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+
+
+        $("#nextBook,#prevBook").show();
+
+        if(capitulo<BibleUtils[testamento][bookClicked].totalCapitulos){
+            var textNext = BibleUtils[testamento][bookClicked].abrev+" "+(capitulo+1);
+            $("#nextBook").text("Ir para "+textNext)
+        }else{
+            $("#nextBook").hide();
+        }
+
+        if(capitulo>1){
+            var textNext = BibleUtils[testamento][bookClicked].abrev+" "+(capitulo-1);
+            $("#prevBook").text("Ir para "+textNext);
+
+        }else{
+            $("#prevBook").hide();
+        }
 
         $(book.bookContent).each(function(idx,ver){
             if(ver.tipo=='calling'||ver.tipo=='sub-calling'){
