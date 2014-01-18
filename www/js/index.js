@@ -129,7 +129,7 @@ function setVersiculoBehavior(hl){
 
             $.mobile.silentScroll($("#v"+(parseInt(versiculo)-1)).offset().top-15);
         } 
-        $("#LivroPage p.versiculo").removeClass("highlight_versiculo").click(function(){
+        $("#LivroPage p.versiculo").removeClass("highlight_versiculo").on("tap",function(){
             $(this).toggleClass('highlight_versiculo');
         });
         if(hl)
@@ -223,14 +223,14 @@ console.log(url);
 
         if(capitulo<BibleUtils[testamento][bookClicked].totalCapitulos){
             var textNext = BibleUtils[testamento][bookClicked].abrev+" "+(capitulo+1);
-            $("#nextBook").text("Ir para "+textNext)
+            $("#nextBook").html("&nbsp;&nbsp;"+textNext+"&nbsp;&nbsp;");
         }else{
             $("#nextBook").hide();
         }
 
         if(capitulo>1){
             var textNext = BibleUtils[testamento][bookClicked].abrev+" "+(capitulo-1);
-            $("#prevBook").text("Ir para "+textNext);
+            $("#prevBook").html("&nbsp;&nbsp;"+textNext+"&nbsp;&nbsp;");
 
         }else{
             $("#prevBook").hide();
