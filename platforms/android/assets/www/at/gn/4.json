@@ -1,0 +1,139 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 4",
+  "bookContent": [
+  {"tipo":"calling","texto":"Abel e Caim"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Coabitou o homem com Eva, sua mulher. Esta concebeu e deu à luz a Caim; então, disse: Adquiri um varão com o auxílio do SENHOR."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "Depois, deu à luz a Abel, seu irmão. Abel foi pastor de ovelhas, e Caim, lavrador."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Aconteceu que no fim de uns tempos trouxe Caim do fruto da terra uma oferta ao SENHOR."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Abel, por sua vez, trouxe das primícias do seu rebanho e da gordura deste. Agradou-se o SENHOR de Abel e de sua oferta;"
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "ao passo que de Caim e de sua oferta não se agradou. Irou-se, pois, sobremaneira, Caim, e descaiu-lhe o semblante."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Então, lhe disse o SENHOR: Por que andas irado, e por que descaiu o teu semblante?"
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Se procederes bem, não é certo que serás aceito? Se, todavia, procederes mal, eis que o pecado jaz à porta; o seu desejo será contra ti, mas a ti cumpre dominá-lo."
+    },
+    {"tipo":"calling","texto":"O primeiro homicídio"},
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Disse Caim a Abel, seu irmão: Vamos ao campo. Estando eles no campo, sucedeu que se levantou Caim contra Abel, seu irmão, e o matou."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Disse o SENHOR a Caim: Onde está Abel, teu irmão? Ele respondeu: Não sei; acaso, sou eu tutor de meu irmão?"
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "E disse Deus: Que fizeste? A voz do sangue de teu irmão clama da terra a mim."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "És agora, pois, maldito por sobre a terra, cuja boca se abriu para receber de tuas mãos o sangue de teu irmão."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "Quando lavrares o solo, não te dará ele a sua força; serás fugitivo e errante pela terra."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Então, disse Caim ao SENHOR: É tamanho o meu castigo, que já não posso suportá-lo."
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "Eis que hoje me lanças da face da terra, e da tua presença hei de esconder-me; serei fugitivo e errante pela terra; quem comigo se encontrar me matará."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "O SENHOR, porém, lhe disse: Assim, qualquer que matar a Caim será vingado sete vezes. E pôs o SENHOR um sinal em Caim para que o não ferisse de morte quem quer que o encontrasse."
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "Retirou-se Caim da presença do SENHOR e habitou na terra de Node, ao oriente do Éden."
+    },
+    {"tipo":"calling","texto":"Descendentes de Caim"},
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "E coabitou Caim com sua mulher; ela concebeu e deu à luz a Enoque. Caim edificou uma cidade e lhe chamou Enoque, o nome de seu filho."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "A Enoque nasceu-lhe Irade; Irade gerou a Meujael, Meujael, a Metusael, e Metusael, a Lameque."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "Lameque tomou para si duas esposas: o nome de uma era Ada, a outra se chamava Zilá."
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "Ada deu à luz a Jabal; este foi o pai dos que habitam em tendas e possuem gado."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "O nome de seu irmão era Jubal; este foi o pai de todos os que tocam harpa e flauta."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Zilá, por sua vez, deu à luz a Tubalcaim, artífice de todo instrumento cortante, de bronze e de ferro; a irmã de Tubalcaim foi Naamá."
+    },
+    {
+      "id": 23,
+      "tipo": "versiculo",
+      "texto": "E disse Lameque às suas esposas: Ada e Zilá, ouvi-me; vós, mulheres de Lameque, escutai o que passo a dizer-vos: Matei um homem porque ele me feriu; e um rapaz porque me pisou."
+    },
+    {
+      "id": 24,
+      "tipo": "versiculo",
+      "texto": "Sete vezes se tomará vingança de Caim, de Lameque, porém, setenta vezes sete."
+    },
+    {
+      "id": 25,
+      "tipo": "versiculo",
+      "texto": "Tornou Adão a coabitar com sua mulher; e ela deu à luz um filho, a quem pôs o nome de Sete; porque, disse ela, Deus me concedeu outro descendente em lugar de Abel, que Caim matou."
+    },
+    {
+      "id": 26,
+      "tipo": "versiculo",
+      "texto": "A Sete nasceu-lhe também um filho, ao qual pôs o nome de Enos; daí se começou a invocar o nome do SENHOR."
+    }
+  ]
+}

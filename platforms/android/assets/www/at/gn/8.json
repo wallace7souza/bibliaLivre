@@ -1,0 +1,120 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 8",
+  "bookContent": [
+  {"tipo":"calling","texto":"Diminuem as águas do dilúvio"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Lembrou-se Deus de Noé e de todos os animais selváticos e de todos os animais domésticos que com ele estavam na arca; Deus fez soprar um vento sobre a terra, e baixaram as águas."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "Fecharam-se as fontes do abismo e também as comportas dos céus, e a copiosa chuva dos céus se deteve."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "As águas iam-se escoando continuamente de sobre a terra e minguaram ao cabo de cento e cinqüenta dias."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "No dia dezessete do sétimo mês, a arca repousou sobre as montanhas de Ararate."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "E as águas foram minguando até ao décimo mês, em cujo primeiro dia apareceram os cimos dos montes."
+    },
+    {"tipo":"calling","texto":"Noé solta um corvo e depois uma pomba"},
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Ao cabo de quarenta dias, abriu Noé a janela que fizera na arca"
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "e soltou um corvo, o qual, tendo saído, ia e voltava, até que se secaram as águas de sobre a terra."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Depois, soltou uma pomba para ver se as águas teriam já minguado da superfície da terra;"
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "mas a pomba, não achando onde pousar o pé, tornou a ele para a arca; porque as águas cobriam ainda a terra. Noé, estendendo a mão, tomou-a e a recolheu consigo na arca."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Esperou ainda outros sete dias e de novo soltou a pomba fora da arca."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "À tarde, ela voltou a ele; trazia no bico uma folha nova de oliveira; assim entendeu Noé que as águas tinham minguado de sobre a terra."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "Então, esperou ainda mais sete dias e soltou a pomba; ela, porém, já não tornou a ele."
+    },
+    {"tipo":"calling","texto":"Noé e sua família saem da arca"},
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Sucedeu que, no primeiro dia do primeiro mês, do ano seiscentos e um, as águas se secaram de sobre a terra. Então, Noé removeu a cobertura da arca e olhou, e eis que o solo estava enxuto."
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "E, aos vinte e sete dias do segundo mês, a terra estava seca."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Então, disse Deus a Noé:"
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "Sai da arca, e, contigo, tua mulher, e teus filhos, e as mulheres de teus filhos."
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "Os animais que estão contigo, de toda carne, tanto aves como gado, e todo réptil que rasteja sobre a terra, faze sair a todos, para que povoem a terra, sejam fecundos e nela se multipliquem."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "Saiu, pois, Noé, com seus filhos, sua mulher e as mulheres de seus filhos."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "E também saíram da arca todos os animais, todos os répteis, todas as aves e tudo o que se move sobre a terra, segundo as suas famílias."
+    },
+    {"tipo":"calling","texto":"Noé levanta um altar"},
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "Levantou Noé um altar ao SENHOR e, tomando de animais limpos e de aves limpas, ofereceu holocaustos sobre o altar."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "E o SENHOR aspirou o suave cheiro e disse consigo mesmo: Não tornarei a amaldiçoar a terra por causa do homem, porque é mau o desígnio íntimo do homem desde a sua mocidade; nem tornarei a ferir todo vivente, como fiz."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Enquanto durar a terra, não deixará de haver sementeira e ceifa, frio e calor, verão e inverno, dia e noite."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 7",
+  "bookContent": [
+  {"tipo":"calling","texto":"Noé e sua família entram na arca"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Disse o SENHOR a Noé: Entra na arca, tu e toda a tua casa, porque reconheço que tens sido justo diante de mim no meio desta geração."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "De todo animal limpo levarás contigo sete pares: o macho e sua fêmea; mas dos animais imundos, um par: o macho e sua fêmea."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Também das aves dos céus, sete pares: macho e fêmea; para se conservar a semente sobre a face da terra."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Porque, daqui a sete dias, farei chover sobre a terra durante quarenta dias e quarenta noites; e da superfície da terra exterminarei todos os seres que fiz."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "E tudo fez Noé, segundo o SENHOR lhe ordenara."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Tinha Noé seiscentos anos de idade, quando as águas do dilúvio inundaram a terra."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Por causa das águas do dilúvio, entrou Noé na arca, ele com seus filhos, sua mulher e as mulheres de seus filhos."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Dos animais limpos, e dos animais imundos, e das aves, e de todo réptil sobre a terra,"
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "entraram para Noé, na arca, de dois em dois, macho e fêmea, como Deus lhe ordenara."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "E aconteceu que, depois de sete dias, vieram sobre a terra as águas do dilúvio."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "No ano seiscentos da vida de Noé, aos dezessete dias do segundo mês, nesse dia romperam-se todas as fontes do grande abismo, e as comportas dos céus se abriram,"
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "e houve copiosa chuva sobre a terra durante quarenta dias e quarenta noites."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Nesse mesmo dia entraram na arca Noé, seus filhos Sem, Cam e Jafé, sua mulher e as mulheres de seus filhos;"
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "eles, e todos os animais segundo as suas espécies, todo gado segundo as suas espécies, todos os répteis que rastejam sobre a terra segundo as suas espécies, todas as aves segundo as suas espécies, todos os pássaros e tudo o que tem asa."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "De toda carne, em que havia fôlego de vida, entraram de dois em dois para Noé na arca;"
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "eram macho e fêmea os que entraram de toda carne, como Deus lhe havia ordenado; e o SENHOR fechou a porta após ele."
+    },
+    {"tipo":"calling","texto":"O dilúvio"},
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "Durou o dilúvio quarenta dias sobre a terra; cresceram as águas e levantaram a arca de sobre a terra."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "Predominaram as águas e cresceram sobremodo na terra; a arca, porém, vogava sobre as águas."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "Prevaleceram as águas excessivamente sobre a terra e cobriram todos os altos montes que havia debaixo do céu."
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "Quinze côvados acima deles prevaleceram as águas; e os montes foram cobertos."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "Pereceu toda carne que se movia sobre a terra, tanto de ave como de animais domésticos e animais selváticos, e de todos os enxames de criaturas que povoam a terra, e todo homem."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Tudo o que tinha fôlego de vida em suas narinas, tudo o que havia em terra seca, morreu."
+    },
+    {
+      "id": 23,
+      "tipo": "versiculo",
+      "texto": "Assim, foram exterminados todos os seres que havia sobre a face da terra; o homem e o animal, os répteis e as aves dos céus foram extintos da terra; ficou somente Noé e os que com ele estavam na arca."
+    },
+    {
+      "id": 24,
+      "tipo": "versiculo",
+      "texto": "E as águas durante cento e cinqüenta dias predominaram sobre a terra."
+    }
+  ]
+}
