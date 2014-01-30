@@ -8,7 +8,7 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>Biblia Livre</name>
+    <name>Bíblia Livre</name>
     <description>
         A palavra livre a todos os dispositivos.
     </description>
