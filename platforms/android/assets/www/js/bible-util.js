@@ -277,14 +277,14 @@ var BibleUtils = {
 			"16":27
 			}},
 
-	_1Co:{nome:"1 Coríntios",abrev:"1Co",totalCapitulos:16,
+	"1Co":{nome:"1 Coríntios",abrev:"1Co",totalCapitulos:16,
 			"capVerMap":{
 			"1":31,"2":16,"3":23,"4":21,"5":13,"6":20,"7":40,
 			"8":13,"9":27,"10":33,"11":34,"12":31,"13":13,"14":40,"15":58,
 			"16":24
 			}},
 
-	_2Co:{nome:"2 Coríntios",abrev:"2Co",totalCapitulos:13,
+	"2Co":{nome:"2 Coríntios",abrev:"2Co",totalCapitulos:13,
 			"capVerMap":{
 			"1":24,"2":17,"3":18,"4":18,"5":21,"6":18,"7":16,
 			"8":24,"9":15,"10":18,"11":33,"12":21,"13":14
@@ -306,16 +306,16 @@ var BibleUtils = {
 	Cl:{nome:"Colossenses",abrev:"Cl",totalCapitulos:4,
 			"capVerMap":{"1":29,"2":23,"3":25,"4":18}},
 
-	_1Ts:{nome:"1 Tessalonicenses",abrev:"1Ts",totalCapitulos:5,
+	"1Ts":{nome:"1 Tessalonicenses",abrev:"1Ts",totalCapitulos:5,
 			"capVerMap":{"1":10,"2":20,"3":13,"4":18,"5":28}},
 
-	_2Ts:{nome:"2 Tessalonicenses",abrev:"2Ts",totalCapitulos:3,
+	"2Ts":{nome:"2 Tessalonicenses",abrev:"2Ts",totalCapitulos:3,
 			"capVerMap":{"1":12,"2":17,"3":18}},
 
-	_1Tm:{nome:"1 Timóteo",abrev:"1Tm",totalCapitulos:6,
+	"1Tm":{nome:"1 Timóteo",abrev:"1Tm",totalCapitulos:6,
 			"capVerMap":{"1":20,"2":15,"3":16,"4":16,"5":25,"6":21}},
 
-	_2Tm:{nome:"2 Timóteo",abrev:"2Tm",totalCapitulos:4,
+	"2Tm":{nome:"2 Timóteo",abrev:"2Tm",totalCapitulos:4,
 			"capVerMap":{"1":18,"2":26,"3":17,"4":22}},
 
 	Tt:{nome:"Tito",abrev:"Tt",totalCapitulos:3,
@@ -333,19 +333,19 @@ var BibleUtils = {
 	Tg:{nome:"Tiago",abrev:"Tg",totalCapitulos:5,
 			"capVerMap":{"1":27,"2":26,"3":18,"4":17,"5":20}},
 
-	_1Pe:{nome:"1 Pedro",abrev:"1Pe",totalCapitulos:5,
+	"1Pe":{nome:"1 Pedro",abrev:"1Pe",totalCapitulos:5,
 			"capVerMap":{"1":25,"2":25,"3":22,"4":19,"5":14}},
 
-	_2Pe:{nome:"2 Pedro",abrev:"2Pe",totalCapitulos:3,
+	"2Pe":{nome:"2 Pedro",abrev:"2Pe",totalCapitulos:3,
 			"capVerMap":{"1":21,"2":22,"3":18}},
 
-	_1Jo:{nome:"1 João",abrev:"1Jo",totalCapitulos:5,
+	"1Jo":{nome:"1 João",abrev:"1Jo",totalCapitulos:5,
 			"capVerMap":{"1":10,"2":29,"3":24,"4":21,"5":21}},
 
-	_2Jo:{nome:"2 João",abrev:"2Jo",totalCapitulos:1,
+	"2Jo":{nome:"2 João",abrev:"2Jo",totalCapitulos:1,
 			"capVerMap":{"1":13}},
 
-	_3Jo:{nome:"3 João",abrev:"3Jo",totalCapitulos:1,
+	"3Jo":{nome:"3 João",abrev:"3Jo",totalCapitulos:1,
 			"capVerMap":{"1":15}},
 
 	Jd:{nome:"Judas",abrev:"Jd",totalCapitulos:1,
