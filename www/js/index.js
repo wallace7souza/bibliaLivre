@@ -66,12 +66,12 @@ $(document).ready(function () {
         }).on("pinchout", function (event) {
             $("#contentBook p").each(function(idx,p){
                 var t = parseInt($(p).css('font-size'));
-                $(p).css('font-size',(t+10)+'px');
+                $(p).css('font-size',(t+3)+'px');
             })
         }).on("pinchin", function (event) {
             $("#contentBook p").each(function(idx,p){
                 var t = parseInt($(p).css('font-size'));
-                $(p).css('font-size',(t+3)+'px');
+                $(p).css('font-size',(t-3)+'px');
             })
         });
 
