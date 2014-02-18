@@ -55,11 +55,11 @@ var app = {
 
 $(document).ready(function () {
 
-    Hammer(document.getElementById("contentBook")).on("swiperight",function (event) {
+    Hammer(document.getElementById("contentBook")).on("swipeleft",function (event) {
         if ($('#nextBook').is(":visible")) {
             $('#nextBook').click();
         }
-    }).on("swipeleft", function (event) {
+    }).on("swiperight", function (event) {
             if ($('#prevBook').is(":visible")) {
                 $('#prevBook').click();
             }
