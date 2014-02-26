@@ -182,7 +182,8 @@ function setShareLinkEvents(){
             textToShare.push($(ver).text())
         });
         var toShare = textToShare.join("\r\n") + "\r\n" + ((BibleUtils[testamento][bookClicked].nome) + " " + capitulo ) + " - @BibliaLivre";
-        console.log(toShare);
+        window.plugins.toast.showShortCenter('Abrindo compartilhamento...');
+
         window.plugins.socialsharing.share(toShare);
     });
 }

@@ -2,6 +2,7 @@
 <widget id="com.bl.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
         xmlns:gap = "http://phonegap.com/ns/1.0">
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
+    <gap:plugin name="nl.x-services.plugins.toast" />
     <name>Bíblia Livre</name>
     <description>
         A palavra livre a todos os dispositivos.
@@ -16,5 +17,15 @@
   		<param name="android-package" value="nl.xservices.plugins.SocialSharing" />
         <param name="wp-package" value="SocialSharing"/>
 	</feature>
+
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+
+    <feature name="Toast">
+        <param name="ios-package" value="Toast" />
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
 
 </widget>
