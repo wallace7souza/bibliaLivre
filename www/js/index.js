@@ -295,7 +295,7 @@ function loadBook(gotoPage) {
 
             } else if (ver.tipo == 'versiculo') {
                 $("#contentBook")
-                    .append("<p class='versiculo' id='v" + ver.id + "' ><strong >" + ver.id + ".</strong>" + ver.texto + "</p>");
+                    .append("<p class='versiculo' id='v" + ver.id + "' ><strong >" + ver.id + ". </strong>" + ver.texto + "</p>");
             }
         });
 
