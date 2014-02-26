@@ -2,7 +2,7 @@ var BibleUtils = {
 		
 	AT : {
     
-    Gn:{nome:"Gênesis",abrev:"Gn",totalCapitulos:50,
+    Gn:{nome:"GÃªnesis",abrev:"Gn",totalCapitulos:50,
 		capVerMap:{
 			"1":31,"2":25,"3":24,"4":26,"5":32,"6":21,"7":24,"8":22,
 			"9":29,"10":32,"11":32,"12":20,	"13":18,"14":24,"15":21,
@@ -16,7 +16,7 @@ var BibleUtils = {
 				}
 			},	
     
-    Ex:{nome:"Êxodo",abrev:"&Ecirc;x",totalCapitulos:40,
+    Ex:{nome:"ÃŠxodo",abrev:"&Ecirc;x",totalCapitulos:40,
 			capVerMap:{
 				"1":22,"2":25,"3":22,"4":31,"5":23,	"6":30,"7":25,
 				"8":32,"9":35,"10":29,"11":10,"12":51,"13":22,"14":31,
@@ -27,7 +27,7 @@ var BibleUtils = {
 
 			}},
     
-    Lv:{nome:"Levítico",abrev:"Lv",totalCapitulos:27,
+    Lv:{nome:"LevÃ­tico",abrev:"Lv",totalCapitulos:27,
 			capVerMap:{
 				"1":17,"2":16,"3":17,"4":35,"5":19,"6":30,"7":38,"8":36,
 				"9":24,	"10":20,"11":47,"12":8,"13":59,"14":57,"15":33,
@@ -36,7 +36,7 @@ var BibleUtils = {
 
 			}},
 			
-    Nm:{nome:"Números",abrev:"Nm",totalCapitulos:36,
+    Nm:{nome:"NÃºmeros",abrev:"Nm",totalCapitulos:36,
 		capVerMap:{
 				"1":54,"2":34,"3":51,"4":49,"5":31,"6":27,"7":89,"8":26,
 				"9":23,"10":36,"11":35,"12":16,"13":33,"14":45,"15":41,
@@ -46,19 +46,19 @@ var BibleUtils = {
 
 			}},
     
-    Dt:{nome:"Deuteronômio",abrev:"Dt",totalCapitulos:34,
+    Dt:{nome:"DeuteronÃ´mio",abrev:"Dt",totalCapitulos:34,
 			"capVerMap":{"1":46,"2":37,"3":29,"4":49,"5":33,"6":25,"7":26,
 			"8":20,"9":29,"10":22,"11":32,"12":32,"13":18,"14":29,"15":23,
 			"16":22,"17":20,"18":22,"19":21,"20":20,"21":23,"22":30,"23":25,
 			"24":22,"25":19,"26":19,"27":26,"28":68,"29":29,"30":20,"31":30,
 			"32":52,"33":29,"34":12}},
     
-    Js:{nome:"Josué",abrev:"Js",totalCapitulos:24,
+    Js:{nome:"JosuÃ©",abrev:"Js",totalCapitulos:24,
 			"capVerMap":{"1":18,"2":24,"3":17,"4":24,"5":15,"6":27,"7":26,"8":35,
 			"9":27,"10":43,"11":23,"12":24,"13":33,"14":15,"15":63,"16":10,"17":18,
 			"18":28,"19":51,"20":9,"21":45,"22":34,"23":16,"24":33}},
     
-    Jz:{nome:"Juízes",abrev:"Jz",totalCapitulos:21,
+    Jz:{nome:"JuÃ­zes",abrev:"Jz",totalCapitulos:21,
 			"capVerMap":{"1":36,"2":23,"3":31,"4":24,"5":32,"6":40,"7":25,"8":35,
 			"9":57,"10":18,"11":40,"12":15,"13":25,"14":20,"15":20,"16":31,"17":13,
 			"18":31,"19":30,"20":48,"21":25}},
@@ -88,13 +88,13 @@ var BibleUtils = {
 			"9":37,"10":36,"11":21,"12":21,"13":25,"14":29,"15":37,"16":20,"17":41,
 			"18":37,"19":37,"20":21,"21":26,"22":20,"23":37,"24":20,"25":30}},
 
-    "1Cr":{nome:"1 Crônicas",abrev:"1Cr",totalCapitulos:29,
+    "1Cr":{nome:"1 CrÃ´nicas",abrev:"1Cr",totalCapitulos:29,
 			"capVerMap":{"1":54,"2":55,"3":24,"4":43,"5":23,"6":81,"7":40,"8":40,
 			"9":44,"10":14,"11":47,"12":40,"13":14,"14":17,"15":29,"16":43,"17":27,
 			"18":17,"19":19,"20":8,"21":30,"22":19,"23":32,"24":31,"25":31,"26":32,
 			"27":34,"28":21,"29":30}},
 
-     "2Cr":{nome:"2 Crônicas",abrev:"2Cr",totalCapitulos:36,
+     "2Cr":{nome:"2 CrÃ´nicas",abrev:"2Cr",totalCapitulos:36,
 			"capVerMap":{"1":17,"2":18,"3":17,"4":22,"5":14,"6":42,"7":22,"8":18,
 			"9":31,"10":19,"11":23,"12":16,"13":22,"14":15,"15":19,"16":14,"17":19,
 			"18":34,"19":11,"20":37,"21":20,"22":12,"23":21,"24":27,"25":28,"26":23,
@@ -113,7 +113,7 @@ var BibleUtils = {
 			"capVerMap":{"1":22,"2":23,"3":15,"4":17,"5":14,"6":14,"7":10,"8":17,
 			"9":32,"10":3}},
 
-    Jo:{nome:"Jó",abrev:"J&oacute;",totalCapitulos:42,
+    Jo:{nome:"JÃ³",abrev:"J&oacute;",totalCapitulos:42,
 			"capVerMap":{"1":22,"2":13,"3":26,"4":21,"5":27,"6":30,"7":21,
 			"8":22,"9":35,"10":22,"11":20,"12":25,"13":28,"14":22,"15":35,"16":22,
 			"17":16,"18":21,"19":29,"20":29,"21":34,"22":30,"23":17,"24":25,
@@ -140,7 +140,7 @@ var BibleUtils = {
         	"140":13,"141":10,"142":7,"143":12,"144":15,"145":21,"146":10,"147":20,
         	"148":14,"149":9,"150":6}},
     
-    Pv:{nome:"Provérbios",abrev:"Pv",totalCapitulos:31,
+    Pv:{nome:"ProvÃ©rbios",abrev:"Pv",totalCapitulos:31,
 			"capVerMap":{"1":33,"2":22,"3":35,"4":27,"5":23,"6":35,"7":27,
 			"8":36,"9":18,"10":32,"11":31,"12":28,"13":25,"14":35,"15":33,
 			"16":33,"17":28,"18":24,"19":29,"20":30,"21":31,"22":29,"23":35,"24":34,
@@ -150,11 +150,11 @@ var BibleUtils = {
 			"capVerMap":{"1":18,"2":26,"3":22,"4":16,"5":20,"6":12,"7":29,
 			"8":17,"9":18,"10":20,"11":10,"12":14}},
     
-    Ct:{nome:"Cântico dos Cânticos",abrev:"Ct",totalCapitulos:8,
+    Ct:{nome:"CÃ¢ntico dos CÃ¢nticos",abrev:"Ct",totalCapitulos:8,
 			"capVerMap":{"1":17,"2":17,"3":11,"4":16,"5":16,"6":13,"7":13,
 			"8":14}},
     
-    Is:{nome:"Isaías",abrev:"Is",totalCapitulos:66,
+    Is:{nome:"IsaÃ­as",abrev:"Is",totalCapitulos:66,
 			"capVerMap":{"1":31,"2":22,"3":26,"4":6,"5":30,"6":13,"7":25,
 			"8":22,"9":21,"10":34,"11":16,"12":6,"13":22,"14":32,"15":9,
 			"16":14,"17":14,"18":7,"19":25,"20":6,"21":17,"22":25,"23":18,
@@ -174,7 +174,7 @@ var BibleUtils = {
 			"40":16,"41":18,"42":22,"43":13,"44":30,"45":5,"46":28,"47":7,
 			"48":47,"49":39,"50":46,"51":64,"52":34}},
     
-    Lm:{nome:"Lamentações de Jeremias",abrev:"Lm",totalCapitulos:5,
+    Lm:{nome:"LamentaÃ§Ãµes de Jeremias",abrev:"Lm",totalCapitulos:5,
 			"capVerMap":{"1":22,"2":22,"3":66,"4":22,"5":22}},
     
     Ez:{nome:"Ezequias",abrev:"Ez",totalCapitulos:48,
@@ -197,7 +197,7 @@ var BibleUtils = {
     Jl:{nome:"Joel",abrev:"Jl",totalCapitulos:3,
 			"capVerMap":{"1":20,"2":32,"3":21}},
     
-    Am:{nome:"Amós",abrev:"Am",totalCapitulos:9,
+    Am:{nome:"AmÃ³s",abrev:"Am",totalCapitulos:9,
 			"capVerMap":{"1":15,"2":16,"3":15,"4":13,"5":27,"6":14,"7":17,
 			"8":14,"9":15}},
     
@@ -207,7 +207,7 @@ var BibleUtils = {
     Jn:{nome:"Jonas",abrev:"Jn",totalCapitulos:4,
 			"capVerMap":{"1":17,"2":10,"3":10,"4":11}},
     
-    Mq:{nome:"Miquéias",abrev:"Mq",totalCapitulos:7,
+    Mq:{nome:"Miqueias",abrev:"Mq",totalCapitulos:7,
 			"capVerMap":{"1":16,"2":13,"3":12,"4":13,"5":15,"6":16,"7":20}},
     
     Na:{nome:"Naum",abrev:"Na",totalCapitulos:3,
@@ -255,14 +255,14 @@ var BibleUtils = {
 			"24":53
 			}},
 
-	Jo:{nome:"João",abrev:"Jo",totalCapitulos:21,
+	Jo:{nome:"JoÃ£o",abrev:"Jo",totalCapitulos:21,
 			"capVerMap":{
 			"1":51,"2":25,"3":36,"4":54,"5":47,"6":71,"7":53,
 			"8":59,"9":41,"10":42,"11":57,"12":50,"13":38,"14":31,"15":27,
 			"16":33,"17":26,"18":40,"19":42,"20":31,"21":25
 			}},
 
-	At:{nome:"Atos dos Apóstolos",abrev:"At",totalCapitulos:28,
+	At:{nome:"Atos dos ApÃ³stolos",abrev:"At",totalCapitulos:28,
 			"capVerMap":{
 			"1":26,"2":47,"3":26,"4":37,"5":42,"6":15,"7":60,
 			"8":40,"9":43,"10":48,"11":30,"12":25,"13":52,"14":28,"15":41,
@@ -277,25 +277,25 @@ var BibleUtils = {
 			"16":27
 			}},
 
-	"1Co":{nome:"1 Coríntios",abrev:"1Co",totalCapitulos:16,
+	"1Co":{nome:"1 CorÃ­ntios",abrev:"1Co",totalCapitulos:16,
 			"capVerMap":{
 			"1":31,"2":16,"3":23,"4":21,"5":13,"6":20,"7":40,
 			"8":13,"9":27,"10":33,"11":34,"12":31,"13":13,"14":40,"15":58,
 			"16":24
 			}},
 
-	"2Co":{nome:"2 Coríntios",abrev:"2Co",totalCapitulos:13,
+	"2Co":{nome:"2 CorÃ­ntios",abrev:"2Co",totalCapitulos:13,
 			"capVerMap":{
 			"1":24,"2":17,"3":18,"4":18,"5":21,"6":18,"7":16,
 			"8":24,"9":15,"10":18,"11":33,"12":21,"13":14
 			}},
 
-	Gl:{nome:"Gálatas",abrev:"Gl",totalCapitulos:6,
+	Gl:{nome:"GÃ¡latas",abrev:"Gl",totalCapitulos:6,
 			"capVerMap":{
 			"1":24,"2":21,"3":29,"4":31,"5":26,"6":18
 			}},
 
-	Ef:{nome:"Efésios",abrev:"Ef",totalCapitulos:6,
+	Ef:{nome:"EfÃ©sios",abrev:"Ef",totalCapitulos:6,
 			"capVerMap":{
 			"1":23,"2":22,"3":21,"4":32,"5":33,"6":24
 			}},
@@ -312,10 +312,10 @@ var BibleUtils = {
 	"2Ts":{nome:"2 Tessalonicenses",abrev:"2Ts",totalCapitulos:3,
 			"capVerMap":{"1":12,"2":17,"3":18}},
 
-	"1Tm":{nome:"1 Timóteo",abrev:"1Tm",totalCapitulos:6,
+	"1Tm":{nome:"1 TimÃ³teo",abrev:"1Tm",totalCapitulos:6,
 			"capVerMap":{"1":20,"2":15,"3":16,"4":16,"5":25,"6":21}},
 
-	"2Tm":{nome:"2 Timóteo",abrev:"2Tm",totalCapitulos:4,
+	"2Tm":{nome:"2 TimÃ³teo",abrev:"2Tm",totalCapitulos:4,
 			"capVerMap":{"1":18,"2":26,"3":17,"4":22}},
 
 	Tt:{nome:"Tito",abrev:"Tt",totalCapitulos:3,
@@ -339,13 +339,13 @@ var BibleUtils = {
 	"2Pe":{nome:"2 Pedro",abrev:"2Pe",totalCapitulos:3,
 			"capVerMap":{"1":21,"2":22,"3":18}},
 
-	"1Jo":{nome:"1 João",abrev:"1Jo",totalCapitulos:5,
+	"1Jo":{nome:"1 JoÃ£o",abrev:"1Jo",totalCapitulos:5,
 			"capVerMap":{"1":10,"2":29,"3":24,"4":21,"5":21}},
 
-	"2Jo":{nome:"2 João",abrev:"2Jo",totalCapitulos:1,
+	"2Jo":{nome:"2 JoÃ£o",abrev:"2Jo",totalCapitulos:1,
 			"capVerMap":{"1":13}},
 
-	"3Jo":{nome:"3 João",abrev:"3Jo",totalCapitulos:1,
+	"3Jo":{nome:"3 JoÃ£o",abrev:"3Jo",totalCapitulos:1,
 			"capVerMap":{"1":15}},
 
 	Jd:{nome:"Judas",abrev:"Jd",totalCapitulos:1,

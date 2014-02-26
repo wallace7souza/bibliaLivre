@@ -177,7 +177,13 @@ function checkVersiculosSelecionados(){
 
 function setShareLinkEvents(){
     $("#shareLink").on('tap',function(){
-        window.plugins.socialsharing.share('Message only');
+        var textToShare = [];
+        $(".highlight_versiculo").each(function(idx,ver){
+            textToShare.push($(ver).text())
+        });
+        var toShare = textToShare.join("\r\n") + "\r\n" + ((BibleUtils[testamento][bookClicked].nome) + " " + capitulo ) + " - @BibliaLivre";
+        console.log(toShare);
+        window.plugins.socialsharing.share(toShare);
     });
 }
 
