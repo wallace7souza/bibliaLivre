@@ -138,14 +138,12 @@ $(document).ready(function () {
     $.mobile.buttonMarkup.hoverDelay = 0;
 
     $(".vclick").bind("click", function (ev) {
-        // console.log($(ev.target));
-        // console.log($(ev.target).parents(".vclick").attr("target"));
         eval($(ev.target).parents(".vclick").attr("target"));
-        //$(ev.target).parents(".vclick").find("button.targetClick").click();
     });
 
 
     setShareLinkEvents();
+    setFavoritarLinkEvents();
 });
 
 
@@ -182,9 +180,53 @@ function setShareLinkEvents(){
             textToShare.push($(ver).text())
         });
         var toShare = textToShare.join("\r\n") + "\r\n" + ((BibleUtils[testamento][bookClicked].nome) + " " + capitulo ) + " - @BibliaLivre";
-        window.plugins.toast.showShortCenter('Abrindo compartilhamento...');
 
-        window.plugins.socialsharing.share(toShare);
+        var message = 'Abrindo compartilhamento...';
+        if(window.plugins){
+            window.plugins.toast.showShortCenter(message);
+            window.plugins.socialsharing.share(toShare);
+        }else{
+            window.console.log(message);
+        }
+    });
+}
+
+function setFavoritarLinkEvents(){
+
+    $("#favoritarLink").on('tap',function(){
+
+        var toFavoritos = [];
+        $(".highlight_versiculo").each(function(idx,ver){
+            var versiculo2 = ver.id.replace("v", "");
+            toFavoritos.push({
+                testamento: testamento,
+                bookClicked: bookClicked,
+                capitulo:capitulo,
+                versiculo: versiculo2,
+                texto: $(ver).text(),
+                nome : ((BibleUtils[testamento][bookClicked].nome) + " " + capitulo+":"+versiculo2 )
+            });
+        });
+
+        if(window.localStorage.getItem('favoritosArray')){
+            var  t = JSON.parse(window.localStorage.getItem('favoritosArray'));
+            window.console.log(t,(typeof t));
+            for(var i=0; i < toFavoritos.length;i++){
+                t.push(toFavoritos[i]);
+            }
+            toFavoritos = t;
+        }
+
+
+        window.localStorage.setItem('favoritosArray',JSON.stringify(toFavoritos));
+
+        var message = 'Versículo(s) adicionado(s) ao Favoritos.';
+        if(window.plugins){
+            window.plugins.toast.showShortBottom(message);
+        }else{
+            window.console.log(message,toFavoritos);
+        }
+
     });
 }
 
@@ -237,14 +279,7 @@ function gotoBook(testamento, bookClicked, capitulo, versiculo) {
 
 function loadBook(gotoPage) {
 
-
-    $.mobile.loading("show", {
-        text: 'Carregando livro...',
-        textVisible: true,
-        theme: 'b',
-        textonly: false,
-        html: ""
-    });
+    startLoading('Carregando livro...');
 
     var url = ("./" + testamento + "/" + bookClicked + "/" + capitulo + ".json").toLowerCase();
 
@@ -311,17 +346,109 @@ function loadBook(gotoPage) {
             setVersiculoBehavior();
         }
 
-        $.mobile.loading("hide");
+        stopLoading();
 
     });
 }
 
-function navigate(page, perform) {
+function startLoading(msg){
+    $.mobile.loading("show", {
+        text: msg,
+        textVisible: true,
+        theme: 'b',
+        textonly: false,
+        html: ""
+    });
+
+}
+
+function stopLoading(){
+    $.mobile.loading("hide");
+}
+
+
+function loadFavoritos(){
+    $("#favoritosListView,#semFavoritosMessage").hide();
+    $("#favoritosListView").empty();
+    if(window.localStorage.getItem('favoritosArray')){
+
+        var t = JSON.parse(window.localStorage.getItem('favoritosArray'));
+        var favoritoClicado = null;
+        var favoritoClicadoIdx = null;
+
+        $.each(t, function (idx, ver) {
+
+            var templateLi = $(".templateLi").clone();
+            $(templateLi).removeClass("templateLi");//.addClass(clazz.join((" ")));
+            $(templateLi).find(".nome").text(ver.nome);
+            $(templateLi).find(".texto").text(ver.texto);
+
+            $(templateLi).find(".gearIcon").on('tap',function(){
+                favoritoClicado = ver;
+                favoritoClicadoIdx = idx;
+                $('#menuFavorito').popup('open');
+            });
+
+            $(templateLi).find(".action").on('tap',function(){
+
+                testamento = ver.testamento;
+                bookClicked = ver.bookClicked;
+                capitulo = ver.capitulo;
+                versiculo = ver.versiculo;
+                loadBook(true);
+
+            });
+            $(templateLi).appendTo("#favoritosListView");
+
+        });
+
+        $("#favoritosListView").show();
+
+        $("#menuFavorito .shareMenuItem").on('tap',function(){
+
+            var toShare = favoritoClicado.texto + " \r\n "+ ((BibleUtils[favoritoClicado.testamento][favoritoClicado.bookClicked].nome) + " " + favoritoClicado.capitulo ) + " - @BibliaLivre";
+
+            var message = 'Abrindo compartilhamento...';
+            if(window.plugins){
+                window.plugins.toast.showShortCenter(message);
+                window.plugins.socialsharing.share(toShare);
+            }else{
+                window.console.log(message,toShare);
+            }
+
+            $('#menuFavorito').popup('close');
+
+        });
+        $("#menuFavorito .deleteMenuItem").on('tap',function(){
+            t.splice(favoritoClicadoIdx,1);
+            window.localStorage.setItem('favoritosArray',JSON.stringify(t));
+            $('#menuFavorito').popup('close');
+            loadFavoritos();
+        });
+        $("#menuFavorito .closeMenuItem").on('tap',function(){
+            $('#menuFavorito').popup('close');
+        });
+
+
+    }else{
+        $("#semFavoritosMessage").show();
+    }
+}
+
+function navigate(page, perform,loadingEffect) {
+    if(loadingEffect){
+        startLoading('Abrindo página...');
+
+    }
     if (typeof perform === 'function') {
         perform();
     }
 
     $.mobile.changePage(page);
+
+    if(loadingEffect){
+        stopLoading();
+    }
 }
 
 function openPopupCapVer() {

@@ -29,9 +29,19 @@
 					<li class="vclick" target="navigate('#TestamentoPage')">
 						<a  >
 					 <!-- data-transition="slide" -->
-							<h3>Bíblia</h3>
+                            <img src="http://lorempixel.com/80/80/">
+								<h3>Bíblia</h3>
 							<p>
 								<em>Tradução por João Ferreira de Almeida<br/>(Revista e atualizada)</em>
+							</p>
+					</a></li>
+                    <li class="vclick" target="navigate('#favoritosPage',loadFavoritos,true)">
+						<a  >
+					 <!-- data-transition="slide" -->
+                            <img src="http://lorempixel.com/80/80/">
+								<h3>Favoritos</h3>
+							<p>
+								<em>Versículos favoritados por você.</em>
 							</p>
 					</a></li>
 
@@ -77,6 +87,57 @@
 			<h4></h4>
 		</div>
 	</div>
+
+    <div data-role="page" id="favoritosPage">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <h1>Favoritos</h1>
+            <a onclick="javascript:navigate('#Inicio')" data-prefetch="true" data-role="button"
+               data-icon="back" data-iconpos="left">Voltar</a>
+
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-split-icon="gear"   width="100%" id="favoritosListView" style="display: none">
+
+                <li id="firstFavorite"><a href="#">
+                    <h2>Broken Bells</h2>
+                    <p>Broken Bells</p></a>
+                    <a class="vclick" target="$('#purchase').popup('open')">Purchase album</a>
+                </li>
+
+            </ul>
+
+            <!--UTILIADO PARA GERAR A LISTA COM CSS, CSS SE PERDE QUANDO RECARREGADO VIA JS-->
+            <ul data-role="listview" data-split-icon="gear"   width="100%" id="templateView" style="display: none">
+
+                <li class="templateLi"><a class="action">
+                    <h2 class="nome"></h2>
+                    <p class="texto"></p></a>
+                    <a  class="gearIcon" data-position-to="window" >menu</a>
+                </li>
+
+            </ul>
+
+            <div style="text-align: center" id="semFavoritosMessage">
+                <strong>
+                Você ainda não possui favoritos =( <br/>
+                Acesse sua Bíblia e comece a favoritar seus versículos.
+                </strong>
+            </div>
+
+            <div data-role="popup" id="menuFavorito" data-theme="none">
+            <div data-role="collapsible-set"  data-theme="b" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:250px;">
+                <ul data-role="listview" data-inset="true">
+                    <li data-icon="action"><a class="shareMenuItem">Compartilhar</a></li>
+                    <li data-icon="delete"><a class="deleteMenuItem">Excluir</a></li>
+                    <li data-icon="back"><a class="closeMenuItem">Fechar</a></li>
+                </ul>
+            </div><!-- /collapsible set -->
+                </div>
+        </div>
+        <div data-role="footer">
+            <h4></h4>
+        </div>
+    </div>
 
 	<div data-role="page" id="AntigoTestamentoPage" data-dom-cache="true">
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
