@@ -38,11 +38,14 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function () {
+        console.log('deviceready baby!');
+
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
+        if(!parentElement) return;
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
@@ -141,6 +144,8 @@ $(document).ready(function () {
         //$(ev.target).parents(".vclick").find("button.targetClick").click();
     });
 
+
+    setShareLinkEvents();
 });
 
 
@@ -152,10 +157,30 @@ function setVersiculoBehavior(hl) {
     }
     $("#LivroPage p.versiculo").removeClass("highlight_versiculo").on("tap", function () {
         $(this).toggleClass('highlight_versiculo');
+        checkVersiculosSelecionados();
     });
-    if (hl)
+    if (hl){
         $("#v" + versiculo).addClass("highlight_versiculo");
+        checkVersiculosSelecionados();
+    }
 }
+
+
+function checkVersiculosSelecionados(){
+    if($(".highlight_versiculo").length>0){
+        $("#shareLink,#favoritarLink").show();
+    }else{
+        $("#shareLink,#favoritarLink").hide();
+    }
+}
+
+
+function setShareLinkEvents(){
+    $("#shareLink").on('tap',function(){
+        window.plugins.socialsharing.share('Message only');
+    });
+}
+
 
 function loadCapitulos(target) {
 
@@ -285,14 +310,10 @@ function loadBook(gotoPage) {
 }
 
 function navigate(page, perform) {
-    console.log(typeof perform);
     if (typeof perform === 'function') {
-        console.log(perform);
         perform();
-        console.log(testamento);
     }
 
-    console.log(page);
     $.mobile.changePage(page);
 }
 
