@@ -367,6 +367,14 @@ function stopLoading(){
 }
 
 
+function openTargetBook(test,bookcl,cap,vers) {
+    testamento = test;
+    bookClicked = bookcl;
+    capitulo = cap;
+    versiculo = vers;
+    loadBook(true);
+}
+
 function loadFavoritos(){
     $("#favoritosListView,#semFavoritosMessage").hide();
     $("#favoritosListView").empty();
@@ -383,20 +391,14 @@ function loadFavoritos(){
             $(templateLi).find(".nome").text(ver.nome);
             $(templateLi).find(".texto").text(ver.texto);
 
-            $(templateLi).find(".gearIcon").on('tap',function(){
+            $(templateLi).find(".gearIcon").on('click',function(){
                 favoritoClicado = ver;
                 favoritoClicadoIdx = idx;
                 $('#menuFavorito').popup('open');
             });
 
             $(templateLi).find(".action").on('tap',function(){
-
-                testamento = ver.testamento;
-                bookClicked = ver.bookClicked;
-                capitulo = ver.capitulo;
-                versiculo = ver.versiculo;
-                loadBook(true);
-
+                openTargetBook(ver.testamento,ver.bookClicked,ver.capitulo,ver.versiculo);
             });
             $(templateLi).appendTo("#favoritosListView");
 
