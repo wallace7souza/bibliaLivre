@@ -179,7 +179,7 @@ function setShareLinkEvents(){
         $(".highlight_versiculo").each(function(idx,ver){
             textToShare.push($(ver).text())
         });
-        var toShare = textToShare.join("\r\n") + "\r\n" + ((BibleUtils[testamento][bookClicked].nome) + " " + capitulo ) + " - @BibliaLivre";
+        var toShare = textToShare.join("\r\n") + "\r\n" + ((BibleUtils[testamento][bookClicked].nome) + " " + capitulo ) + " - #BibliaLivre";
 
         var message = 'Abrindo compartilhamento...';
         if(window.plugins){
@@ -408,7 +408,7 @@ function loadFavoritos(){
 
         $("#menuFavorito .shareMenuItem").on('tap',function(){
 
-            var toShare = favoritoClicado.texto + " \r\n "+ ((BibleUtils[favoritoClicado.testamento][favoritoClicado.bookClicked].nome) + " " + favoritoClicado.capitulo ) + " - @BibliaLivre";
+            var toShare = favoritoClicado.texto + " \r\n "+ ((BibleUtils[favoritoClicado.testamento][favoritoClicado.bookClicked].nome) + " " + favoritoClicado.capitulo ) + " - #BibliaLivre";
 
             var message = 'Abrindo compartilhamento...';
             if(window.plugins){
