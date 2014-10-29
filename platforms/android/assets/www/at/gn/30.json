@@ -1,0 +1,231 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 30",
+  "bookContent": [
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Vendo Raquel que não dava filhos a Jacó, teve ciúmes de sua irmã e disse a Jacó: Dá-me filhos, senão morrerei."
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "Então, Jacó se irou contra Raquel e disse: Acaso, estou eu em lugar de Deus que ao teu ventre impediu frutificar?"
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Respondeu ela: Eis aqui Bila, minha serva; coabita com ela, para que dê à luz, e eu traga filhos ao meu colo, por meio dela."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Assim, lhe deu a Bila, sua serva, por mulher; e Jacó a possuiu."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Bila concebeu e deu à luz um filho a Jacó."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Então, disse Raquel: Deus me julgou, e também me ouviu a voz, e me deu um filho; portanto, lhe chamou Dã."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Concebeu outra vez Bila, serva de Raquel, e deu à luz o segundo filho a Jacó."
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "Disse Raquel: Com grandes lutas tenho competido com minha irmã e logrei prevalecer; chamou-lhe, pois, Naftali."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Vendo Lia que ela mesma cessara de conceber, tomou também a Zilpa, sua serva, e deu-a a Jacó, por mulher."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Zilpa, serva de Lia, deu a Jacó um filho."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "Disse Lia: Afortunada! E lhe chamou Gade."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "Depois, Zilpa, serva de Lia, deu o segundo filho a Jacó."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Então, disse Lia: É a minha felicidade! Porque as filhas me terão por venturosa; e lhe chamou Aser."
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "Foi Rúben nos dias da ceifa do trigo, e achou mandrágoras no campo, e trouxe-as a Lia, sua mãe. Então, disse Raquel a Lia: Dá-me das mandrágoras de teu filho."
+    },
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Respondeu ela: Achas pouco o me teres levado o marido? Tomarás também as mandrágoras de meu filho? Disse Raquel: Ele te possuirá esta noite, a troco das mandrágoras de teu filho."
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "À tarde, vindo Jacó do campo, saiu-lhe ao encontro Lia e lhe disse: Esta noite me possuirás, pois eu te aluguei pelas mandrágoras de meu filho. E Jacó, naquela noite, coabitou com ela."
+    },
+    {
+      "id": 17,
+      "tipo": "versiculo",
+      "texto": "Ouviu Deus a Lia; ela concebeu e deu à luz o quinto filho."
+    },
+    {
+      "id": 18,
+      "tipo": "versiculo",
+      "texto": "Então, disse Lia: Deus me recompensou, porque dei a minha serva a meu marido; e chamou-lhe Issacar."
+    },
+    {
+      "id": 19,
+      "tipo": "versiculo",
+      "texto": "E Lia, tendo concebido outra vez, deu a Jacó o sexto filho."
+    },
+    {
+      "id": 20,
+      "tipo": "versiculo",
+      "texto": "E disse: Deus me concedeu excelente dote; desta vez permanecerá comigo meu marido, porque lhe dei seis filhos; e lhe chamou Zebulom."
+    },
+    {
+      "id": 21,
+      "tipo": "versiculo",
+      "texto": "Depois disto, deu à luz uma filha e lhe chamou Diná."
+    },
+    {
+      "id": 22,
+      "tipo": "versiculo",
+      "texto": "Lembrou-se Deus de Raquel, ouviu-a e a fez fecunda."
+    },
+    {
+      "id": 23,
+      "tipo": "versiculo",
+      "texto": "Ela concebeu, deu à luz um filho e disse: Deus me tirou o meu vexame."
+    },
+    {
+      "id": 24,
+      "tipo": "versiculo",
+      "texto": "E lhe chamou José, dizendo: Dê-me o SENHOR ainda outro filho."
+    },
+    {
+      "id": 25,
+      "tipo": "versiculo",
+      "texto": "Tendo Raquel dado à luz a José, disse Jacó a Labão: Permite-me que eu volte ao meu lugar e à minha terra."
+    },
+    {
+      "id": 26,
+      "tipo": "versiculo",
+      "texto": "Dá-me meus filhos e as mulheres, pelas quais eu te servi, e partirei; pois tu sabes quanto e de que maneira te servi."
+    },
+    {
+      "id": 26,
+      "tipo": "calling",
+      "texto": "Labão faz novo pacto com Jacó"
+    },
+    {
+      "id": 27,
+      "tipo": "versiculo",
+      "texto": "Labão lhe respondeu: Ache eu mercê diante de ti; fica comigo. Tenho experimentado que o SENHOR me abençoou por amor de ti."
+    },
+    {
+      "id": 28,
+      "tipo": "versiculo",
+      "texto": "E disse ainda: Fixa o teu salário, que te pagarei."
+    },
+    {
+      "id": 29,
+      "tipo": "versiculo",
+      "texto": "Disse-lhe Jacó: Tu sabes como te venho servindo e como cuidei do teu gado."
+    },
+    {
+      "id": 30,
+      "tipo": "versiculo",
+      "texto": "Porque o pouco que tinhas antes da minha vinda foi aumentado grandemente; e o SENHOR te abençoou por meu trabalho. Agora, pois, quando hei de eu trabalhar também por minha casa?"
+    },
+    {
+      "id": 31,
+      "tipo": "versiculo",
+      "texto": "Então, Labão lhe perguntou: Que te darei? Respondeu Jacó: Nada me darás; tornarei a apascentar e a guardar o teu rebanho, se me fizeres isto:"
+    },
+    {
+      "id": 32,
+      "tipo": "versiculo",
+      "texto": "Passarei hoje por todo o teu rebanho, separando dele os salpicados e malhados, e todos os negros entre os cordeiros, e o que é malhado e salpicado entre as cabras; será isto o meu salário."
+    },
+    {
+      "id": 33,
+      "tipo": "versiculo",
+      "texto": "Assim, responderá por mim a minha justiça, no dia de amanhã, quando vieres ver o meu salário diante de ti; o que não for salpicado e malhado entre as cabras e negro entre as ovelhas, esse, se for achado comigo, será tido por furtado."
+    },
+    {
+      "id": 34,
+      "tipo": "versiculo",
+      "texto": "Disse Labão: Pois sim! Seja conforme a tua palavra."
+    },
+    {
+      "id": 35,
+      "tipo": "versiculo",
+      "texto": "Mas, naquele mesmo dia, separou Labão os bodes listados e malhados e todas as cabras salpicadas e malhadas, todos os que tinham alguma brancura e todos os negros entre os cordeiros; e os passou às mãos de seus filhos."
+    },
+    {
+      "id": 36,
+      "tipo": "versiculo",
+      "texto": "E pôs a distância de três dias de jornada entre si e Jacó; e Jacó apascentava o restante dos rebanhos de Labão."
+    },
+    {
+      "id": 36,
+      "tipo": "calling",
+      "texto": "Jacó se enriquece"
+    },
+    {
+      "id": 37,
+      "tipo": "versiculo",
+      "texto": "Tomou, então, Jacó varas verdes de álamo, de aveleira e de plátano e lhes removeu a casca, em riscas abertas, deixando aparecer a brancura das varas,"
+    },
+    {
+      "id": 38,
+      "tipo": "versiculo",
+      "texto": "as quais, assim escorchadas, pôs ele em frente do rebanho, nos canais de água e nos bebedouros, aonde os rebanhos vinham para dessedentar-se, e conceberam quando vinham a beber."
+    },
+    {
+      "id": 39,
+      "tipo": "versiculo",
+      "texto": "E concebia o rebanho diante das varas, e as ovelhas davam crias listadas, salpicadas e malhadas."
+    },
+    {
+      "id": 40,
+      "tipo": "versiculo",
+      "texto": "Então, separou Jacó os cordeiros e virou o rebanho para o lado dos listados e dos pretos nos rebanhos de Labão; e pôs o seu rebanho à parte e não o juntou com o rebanho de Labão."
+    },
+    {
+      "id": 41,
+      "tipo": "versiculo",
+      "texto": "E, todas as vezes que concebiam as ovelhas fortes, punha Jacó as varas à vista do rebanho nos canais de água, para que concebessem diante das varas."
+    },
+    {
+      "id": 42,
+      "tipo": "versiculo",
+      "texto": "Porém, quando o rebanho era fraco, não as punha; assim, as fracas eram de Labão, e as fortes, de Jacó."
+    },
+    {
+      "id": 43,
+      "tipo": "versiculo",
+      "texto": "E o homem se tornou mais e mais rico; teve muitos rebanhos, e servas, e servos, e camelos, e jumentos."
+    }
+  ]
+}

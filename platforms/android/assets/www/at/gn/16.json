@@ -1,0 +1,88 @@
+{
+  "bookHeader": "",
+  "bookName": "GÊNESIS 16",
+  "bookContent": [
+  {"tipo":"calling","texto":"Sarai e Agar"},
+    {
+      "id": 1,
+      "tipo": "versiculo",
+      "texto": "Ora, Sarai, mulher de Abrão, não lhe dava filhos; tendo, porém, uma serva egípcia, por nome Agar,"
+    },
+    {
+      "id": 2,
+      "tipo": "versiculo",
+      "texto": "disse Sarai a Abrão: Eis que o SENHOR me tem impedido de dar à luz filhos; toma, pois, a minha serva, e assim me edificarei com filhos por meio dela. E Abrão anuiu ao conselho de Sarai."
+    },
+    {
+      "id": 3,
+      "tipo": "versiculo",
+      "texto": "Então, Sarai, mulher de Abrão, tomou a Agar, egípcia, sua serva, e deu-a por mulher a Abrão, seu marido, depois de ter ele habitado por dez anos na terra de Canaã."
+    },
+    {
+      "id": 4,
+      "tipo": "versiculo",
+      "texto": "Ele a possuiu, e ela concebeu. Vendo ela que havia concebido, foi sua senhora por ela desprezada."
+    },
+    {
+      "id": 5,
+      "tipo": "versiculo",
+      "texto": "Disse Sarai a Abrão: Seja sobre ti a afronta que se me faz a mim. Eu te dei a minha serva para a possuíres; ela, porém, vendo que concebeu, desprezou-me. Julgue o SENHOR entre mim e ti."
+    },
+    {
+      "id": 6,
+      "tipo": "versiculo",
+      "texto": "Respondeu Abrão a Sarai: A tua serva está nas tuas mãos, procede segundo melhor te parecer. Sarai humilhou-a, e ela fugiu de sua presença."
+    },
+    {
+      "id": 7,
+      "tipo": "versiculo",
+      "texto": "Tendo-a achado o Anjo do SENHOR junto a uma fonte de água no deserto, junto à fonte no caminho de Sur,"
+    },
+    {
+      "id": 8,
+      "tipo": "versiculo",
+      "texto": "disse-lhe: Agar, serva de Sarai, donde vens e para onde vais? Ela respondeu: Fujo da presença de Sarai, minha senhora."
+    },
+    {
+      "id": 9,
+      "tipo": "versiculo",
+      "texto": "Então, lhe disse o Anjo do SENHOR: Volta para a tua senhora e humilha-te sob suas mãos."
+    },
+    {
+      "id": 10,
+      "tipo": "versiculo",
+      "texto": "Disse-lhe mais o Anjo do SENHOR: Multiplicarei sobremodo a tua descendência, de maneira que, por numerosa, não será contada."
+    },
+    {
+      "id": 11,
+      "tipo": "versiculo",
+      "texto": "Disse-lhe ainda o Anjo do SENHOR: Concebeste e darás à luz um filho, a quem chamarás Ismael, porque o SENHOR te acudiu na tua aflição."
+    },
+    {
+      "id": 12,
+      "tipo": "versiculo",
+      "texto": "Ele será, entre os homens, como um jumento selvagem; a sua mão será contra todos, e a mão de todos, contra ele; e habitará fronteiro a todos os seus irmãos."
+    },
+    {
+      "id": 13,
+      "tipo": "versiculo",
+      "texto": "Então, ela invocou o nome do SENHOR, que lhe falava: Tu és Deus que vê; pois disse ela: Não olhei eu neste lugar para aquele que me vê?"
+    },
+    {
+      "id": 14,
+      "tipo": "versiculo",
+      "texto": "Por isso, aquele poço se chama Beer-Laai-Roi; está entre Cades e Berede."
+    },
+    {"tipo":"calling","texto":"Nascimento de Ismael"},
+    {
+      "id": 15,
+      "tipo": "versiculo",
+      "texto": "Agar deu à luz um filho a Abrão; e Abrão, a seu filho que lhe dera Agar, chamou-lhe Ismael."
+    },
+    {
+      "id": 16,
+      "tipo": "versiculo",
+      "texto": "Era Abrão de oitenta e seis anos, quando Agar lhe deu à luz Ismael."
+    }
+  ]
+}
